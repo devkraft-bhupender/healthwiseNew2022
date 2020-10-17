@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_aerobics_exercise_plan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.hwi.health.Activitys.Plans.Excercize_plans.AerobicsExercise_plan">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_above="@+id/bottom"
+        app:cardElevation="@dimen/dp5"
+        app:cardUseCompatPadding="true">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:padding="10dp"
+        >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/dp15"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textColor="@color/app_green"
+    android:layout_marginBottom="10dp"
+    android:text="Some Example of Aerobics Exercise "/>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:gravity="center"
+         android:orientation="horizontal">
+<LinearLayout
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="5dp"
+    android:layout_marginRight="3dp"
+    android:gravity="center"
+    android:background="@drawable/edit_shape"
+    >
+         <ImageView
+             android:layout_width="25dp"
+             android:layout_height="25dp"
+             android:tint="@color/app_green"
+             android:src="@drawable/ic_pedestrian_walking"/>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:gravity="center"
+             android:textSize="15dp"
+             android:textColor="@color/textcolorPrimary"
+             android:text="Walk"/>
+
+
+     </LinearLayout>
+         <LinearLayout
+             android:layout_width="140dp"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:layout_marginLeft="3dp"
+             android:background="@drawable/edit_shape"
+             android:padding="5dp"
+            >
+             <ImageView
+                 android:layout_width="25dp"
+                 android:layout_height="25dp"
+                 android:tint="@color/app_green"
+                 android:layout_marginLeft="5dp"
+                 android:src="@drawable/jog"/>
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:textSize="15dp"
+             android:textColor="@color/textcolorPrimary"
+             android:text="Jog"/>
+     </LinearLayout>
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/edit_shape"
+                android:padding="5dp"
+                android:layout_marginRight="3dp"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:tint="@color/app_green"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/swimming"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:textColor="@color/textcolorPrimary"
+                    android:text="swim"/>
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/edit_shape"
+                android:padding="5dp"
+                android:layout_marginLeft="3dp"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:tint="@color/app_green"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/cycle"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/textcolorPrimary"
+                    android:text="cycle"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="5dp"
+    android:gravity="center">
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/edit_shape"
+            android:padding="5dp"
+           >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/app_green"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_girl_dancing"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="@color/textcolorPrimary"
+                android:text="dance"/>
+        </LinearLayout>
+</LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp15"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp30"
+            android:text="Press start when you begin and Stop \nwhen you stop"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp15"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="We will keep track of how much you\n exercised Tell us how you felt during the\n exercise"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp15"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="Also, if you have a wearable device \nor carry your phone, track your heart rate and \ntell us what was the heart rate at the \nmiddle of exercise"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp15"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp30"
+            android:text="This will help us ascertain the intensity of \nyour exercise You will get weekly reports \nof how you are doing!"/>
+
+
+        <Button
+            android:id="@+id/btn_log"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:padding="@dimen/dp5"
+            android:background="@color/app_green"
+            android:text="Log Exercise now"/>
+    </LinearLayout>
+</ScrollView>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>

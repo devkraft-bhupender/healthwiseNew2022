@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hwi.health.Activitys.Plans.CancerPlan">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:cardElevation="@dimen/dp5"
+        android:layout_above="@+id/bottom"
+        app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/dp10"
+       >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp15"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="History of cancer in your Family?"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:tint="@color/app_green"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_big_family"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp15"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Parents, Siblings, Grandparents, \nCousins etc."/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp60">
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp35"
+            android:background="@color/app_green"
+            android:text="Yes"
+            android:textColor="#fff"
+            android:textSize="@dimen/dp15"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp35"
+            android:background="@color/app_green"
+            android:text="No"
+            android:textSize="@dimen/dp15"
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            />
+        </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+    </RelativeLayout>
+

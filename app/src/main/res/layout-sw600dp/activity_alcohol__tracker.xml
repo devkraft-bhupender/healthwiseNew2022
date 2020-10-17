@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_alcohol__tracker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".com.Activitys.More.Calculator_PKG.Alcohol_Tracker">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_marginTop="@dimen/dp50"
+            android:layout_height="100dp"
+            android:tint="@color/app_green"
+            android:src="@drawable/alcholtracker"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:layout_marginTop="@dimen/dp50"
+            android:textSize="@dimen/dp25"
+            android:text="Alcohol Tracker"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp50"
+            android:gravity="center"
+            android:text="Alcohol Tracker helps you track the amount
+of calories consumed while drinking"
+
+            android:textSize="18dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/dp70"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/button_base">
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+
+                android:text="NEXT"
+                android:id="@+id/next"
+                android:background="@drawable/button_shape_cal"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/btm"
+        layout="@layout/bottom_layout" />
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/community_two"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hwi.health.community.Community_two">
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:padding="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/bottom">
+
+    <EditText
+        android:id="@+id/add_qus"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/dp40"
+        android:hint="Add Question"
+        android:padding="3dp"
+        android:background="@drawable/shapeedit"
+      />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="@dimen/dp40"
+        android:background="@color/app_green"
+        android:text="Submit"
+        android:layout_gravity="center"
+        android:textColor="@color/white" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>

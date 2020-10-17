@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f2f2f2</color>
+    <color name="textcolorPrimary">#3f3f3f</color>
+    <color name="colorPrimaryDark">#f2f2f2</color>
+    <color name="colorAccent">#12c999</color>
+    <color name="fbcolor">#3b5998</color>
+    <color name="gmailcolor">#dd4c39</color>
+    <color name="gray">#cfcfcf</color>
+    <color name="darkgray">#767676</color>
+    <color name="darkgray2">#b4b4b4</color>
+    <color name="darkgrayback">#E5E5E5</color>
+    <color name="app_green">#12c999</color>
+    <color name="app_org">#ff740a</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="sinicolor">#12c999</color>
+    <color name="siupcolor">#12c999</color>
+    <color name="background_color">#F2F2F2</color>
+    <color name="datepicker">#12c999</color>
+   <color name="icon_color">#5b95b2</color>
+
+</resources>

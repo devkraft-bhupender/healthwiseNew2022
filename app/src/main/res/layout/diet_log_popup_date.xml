@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="#51000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#51000000"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dp10">
+
+
+            <TextView
+                android:id="@+id/text_popup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Choose the date you want to log a meal for "
+                android:textColor="#FFFFFF"
+                android:textSize="17dp" />
+
+
+
+
+
+            <EditText
+                android:layout_width="@dimen/dp150"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_shape3"
+                android:clickable="false"
+                android:text="Select Date"
+                android:textSize="13dp"
+                android:id="@+id/select_date"
+                android:gravity="center"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:layout_height="30dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/botm"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp10">
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@color/app_org"
+                android:text="Log"
+                android:layout_marginRight="@dimen/dp5"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

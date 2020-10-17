@@ -1,0 +1,1551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.hwi.health.edit_profile.Edit_profile_Activity">
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:cardElevation="@dimen/dp5"
+        android:layout_above="@+id/bottom"
+        app:cardUseCompatPadding="true">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/dp10">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/userimage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:src="@drawable/user_placeholder"
+                    app:siBorderColor="#9e9e9e"
+                    app:siBorderWidth="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/general"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dp5">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/select_one"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/circle" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="+"
+                                android:textColor="@color/app_green"
+                                android:textSize="@dimen/dp30" />
+
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dp5"
+                            android:text="General Profile"
+                            android:layout_gravity="center"
+                            android:textSize="12dp" />
+
+                        <!-- <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:gravity="right">
+
+                             <ImageView
+                                 android:layout_width="15dp"
+                                 android:layout_height="15dp"
+                                 android:src="@drawable/arrow_down"
+                                 android:tint="@color/app_green" />
+                         </LinearLayout>-->
+                    </LinearLayout>
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/basic"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:padding="@dimen/dp5">-->
+
+                    <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_weight="1">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="80dp"-->
+                    <!--android:layout_height="80dp"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:src="@drawable/circle" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:text="+"-->
+                    <!--android:textColor="@color/app_green"-->
+                    <!--android:textSize="@dimen/dp30" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Basic Profile"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:id="@+id/textView6" />-->
+
+                    <!--&lt;!&ndash;  <LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:gravity="right">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="15dp"-->
+                    <!--android:layout_height="15dp"-->
+                    <!--android:src="@drawable/arrow_down"-->
+                    <!--android:tint="@color/app_green" />-->
+                    <!--</LinearLayout>&ndash;&gt;-->
+                    <!--</LinearLayout>-->
+
+
+                    <LinearLayout
+                        android:id="@+id/adavance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dp5">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/select_two"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/circle" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="+"
+                                android:textColor="@color/app_green"
+                                android:textSize="@dimen/dp30" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Advance Profile"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:id="@+id/textView7" />
+
+                        <!-- <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:gravity="right">
+
+                             <ImageView
+                                 android:layout_width="15dp"
+                                 android:layout_height="15dp"
+                                 android:src="@drawable/arrow_down"
+                                 android:tint="@color/app_green" />
+                         </LinearLayout>-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lin_general"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textSize="10dp" />
+
+                        <EditText
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:drawablePadding="15dp"
+                            android:hint="Name"
+                            android:paddingLeft="5dp"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Email"
+                            android:textSize="10dp" />
+
+                        <EditText
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="Email"
+                            android:paddingLeft="5dp"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="DOB"
+                        android:textSize="10dp"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawablePadding="15dp"
+                        android:focusableInTouchMode="false"
+                        android:hint="DOB"
+                        android:paddingLeft="5dp"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Do you want a diet for weight loss"
+                        android:textSize="10dp"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/weight_loss"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:drawablePadding="15dp"
+                        android:hint="yes/no"
+                        android:clickable="false"
+                        android:focusableInTouchMode="false"
+                        android:paddingLeft="5dp"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="@dimen/dp10"
+                        android:background="@color/colorAccent"></View>
+
+                    <!--</LinearLayout>-->
+                    <!--&lt;!&ndash; Gender Age&ndash;&gt;-->
+
+                    <!--<LinearLayout-->
+                    <!--android:visibility="gone"-->
+                    <!--android:id="@+id/lin_basic"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical">-->
+
+
+                    <LinearLayout
+                        android:id="@+id/lin1"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Gender"
+                            android:textSize="10dp"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="Gender"
+                            android:paddingLeft="5dp"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Age"
+                            android:textSize="10dp"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/age"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="Age"
+                            android:paddingLeft="5dp"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+                    </LinearLayout>
+
+
+                    <!-- Hight weight-->
+                    <LinearLayout
+                        android:id="@+id/lin2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Weight"
+                            android:textSize="10dp"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="weight"
+                            android:paddingLeft="5dp"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Height"
+                            android:textSize="10dp"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/height"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="height"
+                            android:paddingLeft="5dp"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+                    </LinearLayout>
+
+
+                    <!--Pregnant-->
+                    <LinearLayout
+                        android:id="@+id/is_Pregnant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Are you Pregnant"
+                            android:textSize="10dp" />
+
+                        <EditText
+                            android:id="@+id/Pregnant"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="No"
+                            android:paddingLeft="5dp"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+                    </LinearLayout>
+
+
+                    <!--feeding-->
+                    <LinearLayout
+                        android:id="@+id/feeding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Are you breast feeding"
+                            android:textSize="10dp"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/breast_feeding"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="No"
+                            android:paddingLeft="5dp"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+                    </LinearLayout>
+
+
+                    <!--menstrual c-->
+                    <LinearLayout
+                        android:id="@+id/menstrual"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="What was the first day of your last menstrual cycle"
+                            android:textSize="10dp"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/menstrual_cycle"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="date"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Pre Pregnancy weight"
+                            android:textSize="10dp"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/Pre_Pregnancy_weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="weight"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+                    </LinearLayout>
+
+
+                    <!--mchild age-->
+                    <LinearLayout
+                        android:id="@+id/child_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Your child Age"
+                            android:textSize="10dp"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/child_Age"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="age"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+                    </LinearLayout>
+
+
+                    <!--Diabetic-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Are You Diabetic"
+                            android:textSize="10dp"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/Diabetic"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="No"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+                    </LinearLayout>
+
+
+                    <!--Diabetic dite Insulin-->
+                    <LinearLayout
+                        android:id="@+id/Insulin_lin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Are you Taking Insulin"
+                            android:textSize="10dp"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/Insulin"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="No"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Are you taking a diabetic diet ?"
+                            android:textSize="10dp"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/diabetic_diet"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="No"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+                    </LinearLayout>
+
+
+                    <!--HBA-->
+                    <LinearLayout
+                        android:id="@+id/HBA1C_lin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="When did you last do your HBA1C ?"
+                            android:textSize="10dp"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/HBA1C"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="month"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="HBA1C value"
+                            android:textSize="10dp"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/HBA1C_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="month"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+
+                        <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:text="How frequently do you measure Your blood sugar"-->
+                        <!--android:textSize="18dp"-->
+
+                        <!--/>-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="No.of Times"
+                            android:textSize="10dp"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/Times"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="Times"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="In a"
+                            android:textSize="10dp"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/in_a"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="Times"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Last Fasting"
+                            android:textSize="10dp"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/Fasting"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="Fasting"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="PP Value"
+                            android:textSize="10dp"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/PP_Value"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="PP Value"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+                    </LinearLayout>
+
+
+                    <!--DActivity-->
+                    <LinearLayout
+                        android:id="@+id/lin18"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Activity level one"
+                            android:textSize="10dp" />
+
+                        <EditText
+                            android:id="@+id/Activity_level_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="Activity_level"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Activity level two"
+                            android:textSize="10dp" />
+
+                        <EditText
+                            android:id="@+id/Activity_level_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="Activity_level"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+                    </LinearLayout>
+
+                    <!--food hav-->
+                    <LinearLayout
+                        android:id="@+id/lin20"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Food habits"
+                            android:textSize="10dp" />
+
+                        <EditText
+                            android:id="@+id/habits"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="habits"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Any Heart Disease"
+                            android:textSize="10dp" />
+
+                        <EditText
+                            android:id="@+id/Disease"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="no"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+                    </LinearLayout>
+
+
+                    <!--do you smoke-->
+                    <LinearLayout
+                        android:id="@+id/lin22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Do you Smoke"
+                            android:textSize="10dp" />
+
+                        <EditText
+                            android:id="@+id/Smoke"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="no"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/smoke_lin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="How Often in a Day"
+                            android:textSize="10dp" />
+
+                        <EditText
+                            android:id="@+id/Often"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="no"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+                    </LinearLayout>
+
+                    <!--drin-->
+                    <LinearLayout
+                        android:id="@+id/lin24"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Do you Drink"
+                            android:textSize="10dp" />
+
+                        <EditText
+                            android:id="@+id/Drink"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="no"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/drink_lin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="How Often in a Week"
+                            android:textSize="10dp" />
+
+                        <EditText
+                            android:id="@+id/Often_Week"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:drawablePadding="15dp"
+                            android:focusableInTouchMode="false"
+                            android:hint="no"
+                            android:paddingLeft="5dp"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorAccent"></View>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lin_advance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Waist Circumference inches"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/Waist_inches"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawablePadding="15dp"
+                        android:focusableInTouchMode="false"
+                        android:hint="no"
+                        android:paddingLeft="5dp"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Waist Circumference cms"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/Waist_cms"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawablePadding="15dp"
+                        android:focusableInTouchMode="false"
+                        android:hint="no"
+                        android:paddingLeft="5dp"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Blood Pressure(Systolic/upper value)"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/Blood_Pressure_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawablePadding="15dp"
+                        android:focusableInTouchMode="false"
+                        android:hint="no"
+                        android:paddingLeft="5dp"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Blood Pressure (Diastolic/lower value)"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/Blood_Pressure_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawablePadding="15dp"
+                        android:focusableInTouchMode="false"
+                        android:hint="no"
+                        android:paddingLeft="5dp"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Hemoglobin(gm/dL)"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/Hemoglobin"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawablePadding="15dp"
+                        android:focusableInTouchMode="false"
+                        android:hint="no"
+                        android:paddingLeft="5dp"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Hematocrit(%)"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/Hematocrit"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawablePadding="15dp"
+                        android:focusableInTouchMode="false"
+                        android:hint="no"
+                        android:paddingLeft="5dp"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Fasting blood sugar(mg/dL)"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/blood_sugar"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawablePadding="15dp"
+                        android:focusableInTouchMode="false"
+                        android:hint="no"
+                        android:paddingLeft="5dp"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Total cholesterol(mg/dL)"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/Total_cholesterol"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawablePadding="15dp"
+                        android:focusableInTouchMode="false"
+                        android:hint="no"
+                        android:paddingLeft="5dp"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="LDL cholesterol(mg/dL)"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/LDL_cholesterol"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawablePadding="15dp"
+                        android:focusableInTouchMode="false"
+                        android:hint="no"
+                        android:paddingLeft="5dp"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="HDL cholesterol(mg/dL)"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/HDL_cholesterol"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawablePadding="15dp"
+                        android:focusableInTouchMode="false"
+                        android:hint="no"
+                        android:paddingLeft="5dp"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Triglycerides(mg/dL)"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/Triglycerides"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawablePadding="15dp"
+                        android:focusableInTouchMode="false"
+                        android:hint="no"
+                        android:paddingLeft="5dp"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Vitamin D levels(ng/dL)"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/Vitamin_D"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawablePadding="15dp"
+                        android:focusableInTouchMode="false"
+                        android:hint="no"
+                        android:paddingLeft="5dp"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Vitamin B12 levels(pg/dL)"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/Vitamin_B12"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawablePadding="15dp"
+                        android:focusableInTouchMode="false"
+                        android:hint="no"
+                        android:paddingLeft="5dp"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Did your father/brother get heart disease before 45 years of age or mother/sister before 55 years of age?"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/Risk_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawablePadding="15dp"
+                        android:focusableInTouchMode="false"
+                        android:hint="no"
+                        android:paddingLeft="5dp"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Are you on drugs for high BP?"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/Bp"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawablePadding="15dp"
+                        android:focusableInTouchMode="false"
+                        android:hint="no"
+                        android:paddingLeft="5dp"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"></View>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/update"
+                    android:layout_width="160dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:visibility="gone"
+                    android:background="@color/app_green"
+                    android:text="Update"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

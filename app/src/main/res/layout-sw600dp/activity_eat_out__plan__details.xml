@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_eat_out__plan__details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+
+    tools:context=".com.Activitys.More.Calculator_PKG.Eat_out_Plan_Details">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_above="@+id/bottom"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/dp10"
+                app:cardElevation="@dimen/dp5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="In which meal are you planning to eat out?"
+                        android:textColor="@color/darkgray"
+                        android:textSize="18dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp40"
+                        android:gravity="center">
+
+                        <RadioGroup
+
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:background="@drawable/out_line_gray"
+                            android:checkedButton="@+id/offer"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <RadioButton
+                                    android:id="@+id/breakfast"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:background="@drawable/toggle_widget_background"
+                                    android:button="@null"
+                                    android:checked="true"
+                                    android:gravity="center"
+                                    android:textColor="#313131" />
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:tint="#313131"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/breakfast" />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+
+                                <RadioButton
+                                    android:id="@+id/lunch"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:background="@drawable/toggle_widget_background"
+                                    android:button="@null"
+                                    android:gravity="center"
+                                    android:textColor="#313131" />
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:tint="#313131"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/lunch" />
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+
+                                <RadioButton
+                                    android:id="@+id/dinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:background="@drawable/toggle_widget_background"
+                                    android:button="@null"
+                                    android:gravity="center"
+                                    android:textColor="#313131" />
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:tint="#313131"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/dinner" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+
+                                <RadioButton
+                                    android:id="@+id/snack"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:background="@drawable/toggle_widget_background"
+                                    android:button="@null"
+                                    android:gravity="center"
+                                    android:textColor="#313131" />
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:tint="#313131"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/snack" />
+                            </RelativeLayout>
+
+
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp40"
+                        android:layout_marginRight="@dimen/dp40"
+                        android:layout_marginBottom="@dimen/dp40"
+                        android:orientation="horizontal"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:text="Breakfast"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:layout_height="wrap_content"
+                            android:text="Lunch"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="15dp"
+                            android:gravity="center"
+                            android:text="Dinner"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="15dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Snack"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--<android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                app:cardCornerRadius="@dimen/dp10"
+                app:cardElevation="@dimen/dp5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp30"
+                    android:paddingRight="@dimen/dp30"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:tint="@color/app_green"
+                        android:layout_marginTop="@dimen/dp40"
+                        android:src="@drawable/fastfood" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp40"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Choose Fast Food Chain"
+                        android:textColor="@color/darkgray"
+                        android:textSize="18dp" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/food_chain"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="@dimen/dp40"
+                        android:layout_marginTop="@dimen/dp40"
+                        android:singleLine="true"
+                        android:paddingLeft="@dimen/dp5"
+                        android:background="@drawable/bluebutton"
+                        android:hint="Search" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                app:cardCornerRadius="@dimen/dp10"
+                app:cardElevation="@dimen/dp5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp30"
+                    android:paddingRight="@dimen/dp30"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:tint="@color/app_green"
+                        android:layout_marginTop="@dimen/dp30"
+                        android:src="@drawable/spoon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp30"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Choose Category"
+                        android:textColor="@color/darkgray"
+                        android:textSize="18dp" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/make_auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="@dimen/dp30"
+                        android:layout_marginTop="@dimen/dp30"
+                        android:singleLine="true"
+                        android:paddingLeft="@dimen/dp5"
+                        android:background="@drawable/bluebutton"
+                        android:hint="Search" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                app:cardCornerRadius="@dimen/dp10"
+                app:cardElevation="@dimen/dp5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp30"
+                    android:paddingRight="@dimen/dp30"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:tint="@color/app_green"
+                        android:layout_marginTop="@dimen/dp40"
+                        android:src="@drawable/spoon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp40"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Choose Food Item"
+                        android:textColor="@color/darkgray"
+                        android:textSize="18dp" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/Food_Item"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="@dimen/dp40"
+                        android:layout_marginTop="@dimen/dp40"
+                        android:singleLine="true"
+                        android:paddingLeft="@dimen/dp5"
+                        android:background="@drawable/bluebutton"
+                        android:hint="Search" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                app:cardCornerRadius="@dimen/dp10"
+                app:cardElevation="@dimen/dp5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp30"
+                    android:paddingRight="@dimen/dp30"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:tint="@color/app_green"
+                        android:layout_marginTop="@dimen/dp40"
+                        android:src="@drawable/wine" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp20"
+                        android:layout_marginTop="@dimen/dp40"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Choose Beverage"
+                        android:textColor="@color/darkgray"
+                        android:textSize="18dp" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/Beverage_auto_text"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/dp5"
+                        android:singleLine="true"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="@dimen/dp40"
+                        android:background="@drawable/bluebutton"
+                        android:hint="Search" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+           <!-- <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                app:cardCornerRadius="@dimen/dp10"
+                app:cardElevation="@dimen/dp5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp30"
+                    android:paddingRight="@dimen/dp30"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:tint="@color/app_green"
+                        android:layout_marginTop="@dimen/dp40"
+                        android:src="@drawable/wine" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp20"
+                        android:layout_marginTop="@dimen/dp40"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Choose Beverage"
+                        android:textColor="@color/darkgray"
+                        android:textSize="18dp" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/Beverage"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/dp5"
+                        android:singleLine="true"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="@dimen/dp40"
+                        android:background="@drawable/bluebutton"
+                        android:hint="Search" />
+
+
+                    &lt;!&ndash;<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Choose Brand"
+                        android:textColor="@color/darkgray"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:layout_width="250dp"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="@dimen/dp40"
+                        android:layout_marginTop="@dimen/dp40"
+                        android:background="@drawable/bluebutton"
+                        android:text="Search" />
+&ndash;&gt;
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+-->
+
+           <!-- <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:paddingLeft="@dimen/dp30"
+                android:paddingRight="@dimen/dp30"
+                app:cardCornerRadius="@dimen/dp10"
+                app:cardElevation="@dimen/dp5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:tint="@color/app_green"
+                        android:layout_marginTop="@dimen/dp40"
+                        android:src="@drawable/wine" />
+
+                    &lt;!&ndash; <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="@dimen/dp20"
+                         android:layout_marginTop="@dimen/dp40"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:text="Enter Beverage Serving Size"
+                         android:textColor="@color/darkgray"
+                         android:textSize="15dp" />
+ &ndash;&gt;
+
+                    &lt;!&ndash; <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:layout_marginBottom="@dimen/dp20"
+                         android:orientation="horizontal">
+ 
+ 
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_weight="1"
+                             android:gravity="center"
+                             android:orientation="vertical">
+ 
+                             <EditText
+                                 android:layout_width="100dp"
+                                 android:gravity="center"
+                                 android:layout_height="45dp"
+                                 android:clickable="false"
+                                 android:focusableInTouchMode="false"
+                                 android:background="@drawable/bluebutton"
+                                 android:text="Search" />
+ 
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_weight="1"
+                                 android:gravity="center"
+                                 android:text="ml"
+                                 android:layout_marginTop="@dimen/dp5"
+                                 android:textColor="@color/darkgray"
+                                 android:textSize="15dp" />
+                         </LinearLayout>
+ 
+ 
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_weight="1"
+                             android:gravity="center"
+                             android:text="or"
+                             android:textColor="@color/darkgray"
+                             android:textSize="15dp" />
+ 
+ 
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_weight="1"
+                             android:gravity="center"
+                             android:orientation="vertical">
+ 
+                             <EditText
+                                 android:layout_width="100dp"
+                                 android:gravity="center"
+                                 android:layout_height="45dp"
+                                 android:clickable="false"
+                                 android:focusableInTouchMode="false"
+                                 android:background="@drawable/bluebutton"
+                                 android:text="Search" />
+ 
+                             <TextView
+ 
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_weight="1"
+                                 android:gravity="center"
+                                 android:text="glasses"
+                                 android:layout_marginTop="@dimen/dp5"
+                                 android:textColor="@color/darkgray"
+                                 android:textSize="15dp" />
+                         </LinearLayout>
+ 
+                     </LinearLayout>&ndash;&gt;
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bluebutton"
+                        android:layout_marginBottom="30dp"
+                        android:layout_height="45dp">
+                        <Spinner
+                            android:id="@+id/beverage_size"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Serving Size"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:textSize="18dp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>-->
+            <LinearLayout
+                android:layout_width="260dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/dp50"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/dp40"
+                android:background="@drawable/button_base">
+
+                <Button
+                    android:layout_width="260dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/check"
+                    android:background="@drawable/button_shape_cal"
+                    android:text="CHECK RESULT" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>

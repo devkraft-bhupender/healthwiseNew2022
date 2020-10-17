@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:padding="@dimen/dp10"
+    android:orientation="vertical">
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="@dimen/dp15"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="date"
+        android:gravity="right"
+        android:textSize="@dimen/dp15"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_green"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercise Intensity"
+            android:textSize="@dimen/dp15"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/excercise_intensity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="excercise_intensity"
+             android:gravity="right"
+            android:textSize="@dimen/dp15"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_green"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actually Exercise"
+            android:textSize="@dimen/dp15"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/actually_exercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actually Exercise"
+            android:gravity="right"
+            android:textSize="@dimen/dp15"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_green"></View>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heart Rate"
+            android:textSize="@dimen/dp15"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/heart_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="heart_rate"
+            android:gravity="right"
+            android:textSize="@dimen/dp15"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_green"></View>
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Duration"
+            android:textSize="@dimen/dp15"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="duration"
+            android:gravity="right"
+            android:textSize="@dimen/dp15"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

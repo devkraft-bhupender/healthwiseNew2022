@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_milk_page5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.hwi.health.Activitys.AllTests.CUSTOMISED_DIET_PLAN.Milk_page5">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:cardElevation="@dimen/dp5"
+        android:layout_above="@+id/bottom"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dp10">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp20"
+                android:src="@drawable/milk2"
+                android:tint="#C8C8C8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp40"
+                    android:lines="2"
+                    android:text="What type of milk do you drink? (We strongly advise consuming double toned or skimmed,
+if available, otherwise make your milk low fat at home, "
+                    android:textSize="12dp" />
+
+                <Spinner
+                    android:id="@+id/milk_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shapeedit5"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btm1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/dp30"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left">
+
+                    <ImageView
+                        android:id="@+id/prev"
+                        android:layout_width="@dimen/NEXTPEV_Small"
+                        android:layout_height="@dimen/NEXTPEV_Small"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:src="@drawable/ic_chevron_left_black_24dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:id="@+id/next"
+                        android:layout_width="@dimen/NEXTPEV_Small"
+                        android:layout_height="@dimen/NEXTPEV_Small"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:src="@drawable/ic_chevron_right_black_24dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>

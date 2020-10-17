@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile__menstrul__cycle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".com.Activitys.Profile.First.Profile_Menstrul_Cycle_4">
+
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_above="@+id/btm"-->
+        <!--android:layout_height="match_parent">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/bottom"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:text="What was the first day
+of your last menstrual cycle" />
+
+
+        <ImageView
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp150"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/dp10"
+            android:src="@drawable/calander"/>
+
+        <EditText
+            android:layout_width="@dimen/dp200"
+            android:id="@+id/mc_date"
+            android:clickable="false"
+            android:gravity="center"
+
+            android:focusableInTouchMode="false"
+            android:background="@drawable/shapeedit"
+            android:layout_height="@dimen/dp35" />
+
+
+
+        <!---->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/SmallTop"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="What was your pre
+pregnancy weight ?" />
+
+        <ImageView
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp150"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/dp10"
+            android:src="@drawable/pregnency_weight"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weight_seekBar"
+            android:max="150"
+            android:progress="0"
+            android:thumb="@drawable/drop"
+            android:layout_weight="1" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp35"
+        android:layout_marginTop="@dimen/dp10"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/enter_waight"
+            android:layout_width="@dimen/dp200"
+            android:layout_height="@dimen/dp35"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:background="@drawable/shapeedit"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp40"
+            android:layout_gravity="center"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp25"
+            android:gravity="center"
+            android:text="kg." />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btm1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/dp10"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left">
+
+                <ImageView
+                    android:layout_width="@dimen/NEXTPEV_Medium"
+                    android:layout_height="@dimen/NEXTPEV_Medium"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:id="@+id/prev"
+                    android:src="@drawable/ic_chevron_left_black_24dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <ImageView
+                    android:id="@+id/next"
+                    android:layout_width="@dimen/NEXTPEV_Medium"
+                    android:layout_height="@dimen/NEXTPEV_Medium"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:src="@drawable/ic_chevron_right_black_24dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--</ScrollView>-->
+
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>

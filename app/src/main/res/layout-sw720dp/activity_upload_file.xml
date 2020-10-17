@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_upload_file"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.hwi.health.Activitys.More.manage_report.Upload_file">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_above="@+id/bottom"
+        app:cardElevation="@dimen/dp5"
+        app:cardUseCompatPadding="true">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_above="@+id/bottom"
+    android:padding="@dimen/dp15">
+
+    <EditText
+        android:id="@+id/file_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dp40"
+        android:hint="File name"
+        android:padding="3dp"
+        android:background="@drawable/edit_shape"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:background="@drawable/edit_shape"
+       >
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp5"
+            android:background="@null"
+            android:layout_weight="1"
+            android:id="@+id/Treatment_spin"></Spinner>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:tint="@color/app_green"
+            android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center_horizontal"
+
+    android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:id="@+id/img"
+            android:layout_marginRight="@dimen/dp10"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:drawableLeft="@drawable/file_image"
+            android:textAllCaps="false"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp20"
+            android:drawablePadding="@dimen/dp20"
+            android:background="@color/app_green"
+            android:id="@+id/Attach"
+            android:text="Attach"/>
+    </LinearLayout>
+        <TextView
+            android:id="@+id/pdff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp10"
+
+            android:textSize="@dimen/dp20"
+            />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/dp40"
+        android:background="@color/app_green"
+        android:text="Submit"
+        android:textSize="@dimen/dp20"
+        android:layout_gravity="center"
+        android:textColor="@color/white" />
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>

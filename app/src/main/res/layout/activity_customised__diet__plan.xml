@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_customised__diet__plan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.hwi.health.Activitys.AllTests.CUSTOMISED_DIET_PLAN.Customised_Diet_Plan">
+
+
+    <LinearLayout
+        android:id="@+id/btm1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/bottom"
+        android:layout_marginBottom="@dimen/dp60"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/sinicolor"
+            android:gravity="center"
+            android:text="Submit"
+            android:textSize="14dp" />
+
+
+        <Button
+            android:id="@+id/Reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/sinicolor"
+            android:gravity="center"
+            android:text="Reset"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btm1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/btm2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp10">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TELL US ABOUT YOUR FOOD HABITS, SO THAT WE CAN MAKE YOUR CUSTOMISED IDEAL DIET PLAN"
+                android:textColor="@color/textcolorPrimary" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@color/app_green"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="How many major meals do you take in a day?"
+                android:textSize="@dimen/dp10" />
+
+            <Spinner
+                android:id="@+id/major_meals"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/shapeedit"></Spinner>
+
+            <LinearLayout
+                android:id="@+id/breakfast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What do you eat in breakfast?"
+                    android:textSize="@dimen/dp10" />
+
+                <Spinner
+                    android:id="@+id/eat_in_breakfast"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shapeedit"></Spinner>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="What grains do you eat in lunch and dinner?"
+                android:textSize="@dimen/dp10" />
+
+            <Spinner
+                android:id="@+id/eat_grains"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/shapeedit"></Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="What type of rice, do you eat?"
+                android:textSize="@dimen/dp10" />
+
+            <Spinner
+                android:id="@+id/rice_type"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/shapeedit"></Spinner>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lin_non_veg"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:text="In how many meals per week, do you eat non veg excluding eggs? (text box)"
+                    android:textSize="@dimen/dp10" />
+
+                <Spinner
+                    android:id="@+id/non_veg"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shapeedit"></Spinner>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="OF THE NON-VEG MEALS , HOW MANY ARE OF THE GIVEN MEATS ? (MEATS ARE ASSUMED TO BE FREE OF CHARBI/VISIBLE FAT)"
+                    android:textColor="@color/textcolorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="chicken without skin" />
+
+                    <Spinner
+                        android:id="@+id/chicken_without_skin"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapeedit"></Spinner>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+
+                        android:text="fish" />
+
+                    <Spinner
+                        android:id="@+id/fish"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapeedit"></Spinner>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+
+                        android:text="beef" />
+
+                    <Spinner
+                        android:id="@+id/beef"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapeedit"></Spinner>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="goat meat (mutton)" />
+
+                    <Spinner
+                        android:id="@+id/goat_meat"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapeedit"></Spinner>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+
+                        android:text="lamb" />
+
+                    <Spinner
+                        android:id="@+id/lamb"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapeedit"></Spinner>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+
+                        android:text="pork" />
+
+                    <Spinner
+                        android:id="@+id/pork"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapeedit"></Spinner>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:lines="2"
+                android:text="What type of milk do you drink? (We strongly advise consuming double toned or skimmed,
+if available, otherwise make your milk low fat at home, "
+                android:textSize="@dimen/dp10" />
+
+            <Spinner
+                android:id="@+id/milk_type"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/shapeedit"></Spinner>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="What oil(oils) is food cooked in at your house?"
+                android:textSize="@dimen/dp10" />
+
+            <Spinner
+                android:id="@+id/food_oil"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/shapeedit"></Spinner>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:layout_marginBottom="@dimen/dp40">
+
+                <Spinner
+                    android:id="@+id/category_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/shapeedit"
+                    android:visibility="gone"></Spinner>
+
+                <Spinner
+                    android:id="@+id/category_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/shapeedit"
+                    android:visibility="gone"></Spinner>
+
+
+                <Spinner
+                    android:id="@+id/category_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/shapeedit"
+                    android:visibility="gone"></Spinner>
+
+
+                <Spinner
+                    android:id="@+id/category_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/shapeedit"
+                    android:visibility="gone"></Spinner>
+
+                <Spinner
+                    android:id="@+id/category_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/shapeedit"
+                    android:visibility="gone"></Spinner>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>

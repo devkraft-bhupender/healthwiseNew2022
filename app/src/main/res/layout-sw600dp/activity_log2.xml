@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_plans"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".com.Activitys.Plans.PlansActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/dp65"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dp15"
+
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/dp150"
+                android:layout_height="@dimen/dp150"
+                android:src="@drawable/plans"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:gravity="center"
+
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/box"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/dietplan"
+                    android:orientation="vertical"
+                    android:layout_height="160dp">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+
+                        android:src="@drawable/dibetic_dite"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:text="Diet Log"/>
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/box"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/exerciesplan"
+                    android:orientation="vertical"
+                    android:layout_height="160dp">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+
+                        android:src="@drawable/dumbbells"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:text="Exercise Log"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/box"
+                    android:gravity="center"
+                    android:id="@+id/weighttplan"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="160dp">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+
+                        android:src="@drawable/scale"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:text="Weight Log"/>
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/box"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/bpplan"
+                    android:orientation="vertical"
+                    android:layout_height="160dp">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+
+                        android:src="@drawable/sphygmomanometer"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:text="BP Log"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:gravity="center"
+
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/box"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/sugarplan"
+                    android:orientation="vertical"
+                    android:layout_height="160dp">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+
+                        android:src="@drawable/sugarcube"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:text="Sugar Log"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="160dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/box"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:id="@+id/Treatment"
+                        android:orientation="vertical"
+                        android:layout_height="160dp">
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:tint="#E1E1E1"
+                            android:src="@drawable/pills"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp20"
+                            android:text="Treatment Log"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:gravity="center"
+
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/box"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/eat_out_plan"
+                    android:orientation="vertical"
+                    android:layout_height="160dp">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:tint="#E1E1E1"
+                        android:src="@drawable/eatoutplan"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:text="Eat Out Planner"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/box"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/alchohal_lay"
+                    android:orientation="vertical"
+                    android:layout_height="160dp">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:tint="#E1E1E1"
+                        android:src="@drawable/alcholtracker"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:text="Alcohol Tracker"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--<Button-->
+            <!--android:layout_width="@dimen/dp150"-->
+            <!--android:layout_height="@dimen/dp50"-->
+            <!--android:layout_marginTop="@dimen/dp50"-->
+            <!--android:text="BACK"-->
+            <!--android:background="@drawable/out_line_light_green"/>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/btm"
+        layout="@layout/bottom_layout" />
+</RelativeLayout>

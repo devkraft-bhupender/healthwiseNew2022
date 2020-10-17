@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_risk__calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hwi.health.Activitys.AllTests.RISKCALCULATOR.RISK_CALCULATOR">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/btm1"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dp15">
+
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sex"/>
+        <Spinner
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/shapeedit"
+            ></Spinner>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Weight(in Kgs)"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:hint="DOB"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:text="Hight" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/feet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Feets"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/inch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Inchs"
+                    android:inputType="number"
+                    android:singleLine="true"
+
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+-->        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Waist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Waist Circumference"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Waist in CM(Optional)"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Blood_Pressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Blood Pressure(Systolic/upper value)"
+                android:singleLine="true"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Diastolic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="(Diastolic/lower value)"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cholesterol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Total cholesterol(mg/dL)"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Triglycerides"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Triglycerides(mg/dL)"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+               <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="Do you smoke?"/>
+        <Spinner
+            android:id="@+id/smoke"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/shapeedit"
+            ></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="Do you have diabetes?"/>
+        <Spinner
+            android:id="@+id/diabetes"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/shapeedit"
+            ></Spinner>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Fasting_blood_sugar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Fasting blood sugar"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="In addition there are some factors which influence risk over and above the score, which include the following, tell us your particulars, so that we can analyz these additional"
+            android:textSize="16dp" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginTop="@dimen/dp5"
+          android:background="@color/fbcolor"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/HDL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="HDL choleserol(mg/dL)"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:text="Physical Activity"/>
+        <Spinner
+            android:id="@+id/Physical"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/shapeedit"
+            ></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="Did your father/brother get heart disease before 45 years of age or mother/sister before 55 years of age?"/>
+        <Spinner
+            android:id="@+id/disease"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/shapeedit"
+            ></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="Are you on drugs for high BP ?"/>
+        <Spinner
+            android:id="@+id/high_BP"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/shapeedit"
+            ></Spinner>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btm1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp60"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/Calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/sinicolor"
+            android:gravity="center"
+            android:text="Calculate"
+            android:textSize="14dp" />
+
+
+        <Button
+            android:id="@+id/Reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/sinicolor"
+            android:gravity="center"
+            android:text="Reset"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+    <include
+        android:id="@+id/btm"
+        layout="@layout/bottom_layout"
+        />
+</RelativeLayout>

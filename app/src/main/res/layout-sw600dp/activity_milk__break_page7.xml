@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_milk__break_page7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp"
+    tools:context="com.hwi.health.Activitys.AllTests.CUSTOMISED_DIET_PLAN.Milk_Break_page7">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:cardElevation="@dimen/dp5"
+        android:layout_above="@+id/bottom"
+        app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:padding="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:tint="#C8C8C8"
+           android:layout_marginTop="@dimen/dp20"
+            android:layout_gravity="center"
+            android:src="@drawable/milk"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp40"
+            android:text="Milk"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/Milk"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shapeedit5"></Spinner>
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btm1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginTop="@dimen/dp30"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left">
+
+                <ImageView
+                    android:id="@+id/prev"
+                    android:layout_width="@dimen/NEXTPEV_Medium"
+                    android:layout_height="@dimen/NEXTPEV_Medium"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:src="@drawable/ic_chevron_left_black_24dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <ImageView
+                    android:id="@+id/next"
+                    android:layout_width="@dimen/NEXTPEV_Medium"
+                    android:layout_height="@dimen/NEXTPEV_Medium"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:src="@drawable/ic_chevron_right_black_24dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>

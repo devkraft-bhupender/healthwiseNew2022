@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_heard_risk__profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context="com.hwi.health.Activitys.Profile.Second.HeardRisk_Profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dp5">
+
+            <TextView
+                android:id="@+id/text_dum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="This is dummy data Please fill your Advance Profile to get your HeartRisk Profile  "
+                android:textColor="@color/app_green"
+                android:textSize="@dimen/dp15"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/adv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:orientation="vertical"
+                android:scaleType="centerInside"
+                android:src="@drawable/heartrisk"
+                android:visibility="gone">
+
+
+            </ImageView>
+
+
+            <LinearLayout
+                android:id="@+id/adv_lin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_green"
+                    android:gravity="center"
+                    android:padding="@dimen/dp5"
+                    android:text="Heart Risk Profile"
+                    android:textColor="#ffffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp60"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_shape"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/dp5"
+                        android:singleLine="true"
+                        android:text="BMI"
+                        android:textSize="12dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/BMI"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_shape"
+                        android:gravity="center"
+                        android:textSize="12dp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp60"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_shape"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/dp5"
+                        android:singleLine="true"
+                        android:text="Weight Category"
+                        android:textSize="12dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/Weight"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+
+                        android:background="@drawable/edit_shape"
+                        android:gravity="center"
+                        android:textSize="12dp"></TextView>
+
+
+                </LinearLayout>
+
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp60"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_shape"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/dp5"
+                        android:text="10 year risk for having a heart attack"
+                        android:textSize="12dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/year_risk"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_shape"
+                        android:gravity="center"
+
+                        android:singleLine="true"
+                        android:textSize="12dp"></TextView>
+
+
+                </LinearLayout>
+
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp60"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_shape"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/dp5"
+                        android:text="The Risk is"
+                        android:textSize="12dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/Risk"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_shape"
+                        android:gravity="center"
+                        android:textSize="12dp"></TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/expect_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_shape"
+                        android:gravity="center|left"
+                        android:maxLines="2"
+                        android:paddingLeft="@dimen/dp5"
+                        android:textSize="12dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/year_one"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_shape"
+                        android:gravity="center"
+                        android:textSize="12dp"></TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp60"
+
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/smoke"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_shape"
+                        android:gravity="center|left"
+                        android:maxLines="2"
+                        android:paddingLeft="@dimen/dp5"
+
+                        android:textSize="12dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/year_two"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_shape"
+                        android:gravity="center"
+                        android:textSize="12dp"></TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/year_text_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_shape"
+                        android:gravity="center|left"
+                        android:maxLines="2"
+                        android:paddingLeft="@dimen/dp5"
+                        android:textSize="12dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/year_three"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_shape"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp5"
+                        android:textSize="12dp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/year_text_four"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_shape"
+                        android:gravity="center|left"
+                        android:maxLines="2"
+                        android:paddingLeft="@dimen/dp5"
+                        android:textSize="12dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/year_four"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_shape"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp5"
+                        android:textSize="12dp"></TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/year_text_five"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_shape"
+                        android:gravity="center|left"
+                        android:maxLines="2"
+                        android:paddingLeft="@dimen/dp5"
+                        android:textSize="12dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/year_five"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_shape"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp5"
+                        android:textSize="12dp"></TextView>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/year_text_six"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/edit_shape"
+                    android:gravity="center|left"
+                    android:maxLines="2"
+                    android:paddingLeft="@dimen/dp5"
+                    android:textSize="12dp"
+                    android:visibility="gone"></TextView>
+
+                <TextView
+                    android:id="@+id/year_text_seven"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_shape"
+                    android:gravity="center|left"
+                    android:maxLines="2"
+                    android:paddingLeft="@dimen/dp5"
+                    android:textSize="12dp"
+                    android:visibility="gone"></TextView>
+
+                <TextView
+                    android:id="@+id/year_text_eight"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_shape"
+                    android:gravity="center|left"
+                    android:maxLines="2"
+                    android:paddingLeft="@dimen/dp5"
+                    android:textSize="12dp"
+                    android:visibility="gone"></TextView>
+
+                <TextView
+                    android:id="@+id/year_text_nine"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_shape"
+                    android:gravity="center|left"
+                    android:maxLines="2"
+                    android:paddingLeft="@dimen/dp5"
+                    android:textSize="12dp"
+                    android:visibility="gone"></TextView>
+
+                <TextView
+                    android:id="@+id/year_text_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_shape"
+                    android:gravity="center|left"
+                    android:maxLines="2"
+                    android:paddingLeft="@dimen/dp5"
+                    android:textSize="12dp"
+                    android:visibility="gone"></TextView>
+
+                <TextView
+                    android:id="@+id/year_text_eleven"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/edit_shape"
+                    android:gravity="center|left"
+                    android:maxLines="3"
+                    android:paddingLeft="@dimen/dp5"
+                    android:textSize="12dp"
+                    android:visibility="gone"></TextView>
+
+                <TextView
+                    android:id="@+id/how_to_manage"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_shape"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="To know how to manage your heart risk well, go to(How to avoid or delay heart disease?)"
+                    android:textSize="12dp"
+                    android:visibility="gone"></TextView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:background="@color/app_green"
+                android:paddingLeft="@dimen/dp5"
+                android:paddingRight="@dimen/dp5"
+                android:text="Complete Your HeartRisk Profile"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>

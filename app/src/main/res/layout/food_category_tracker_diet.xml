@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        app:cardElevation="@dimen/dp5"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/row1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="RtlCompat">
+
+                <ImageView
+                    android:id="@+id/cross"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginStart="14dp"
+                    android:src="@drawable/cross" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="252dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="54dp"
+                    android:layout_marginStart="54dp"
+                    android:text="Red Wine"
+                    android:textColor="@color/app_green"
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginStart="46dp"
+                    android:layout_marginTop="52dp"
+                    android:gravity="left|center"
+                    android:text="Serving Sizes"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/listUnits"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/type"
+                    android:layout_marginEnd="9dp"
+                    android:paddingLeft="@dimen/dp10"
+                    tools:ignore="RtlCompat"></Spinner>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/size"
+                    android:layout_width="105dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginStart="46dp"
+                    android:layout_marginTop="100dp"
+                    android:gravity="left|center"
+                    android:text="No of Servings"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/servingSizings"
+                    android:layout_width="141dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/size"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="7dp"
+                    android:gravity="right"
+                    android:paddingLeft="10dp"/>
+            </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/Result"
+                    android:layout_width="342dp"
+                    android:layout_height="34dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginRight="46dp"
+                    android:layout_marginTop="157dp"
+                    android:gravity="center"
+                    android:text="12.2 * Choosen Serving = Calories in your Breakfast"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+
+                <Button
+                    android:id="@+id/servingComparisons"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginRight="46dp"
+                    android:layout_marginTop="201dp"
+                    android:backgroundTint="@color/app_green"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Set this as serving size"
+                    android:textAllCaps="false" />
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_alcohol"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.hwi.health.Activitys.Profile.First.Alcohol">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/bottom"
+        android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Do You Drink?"
+        android:textColor="@color/darkgray"
+        android:textSize="32dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="@dimen/dp50"
+                android:src="@drawable/drinks"/>
+
+            <RadioGroup
+                android:id="@+id/toggle"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="@dimen/dp150"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/out_line"
+                android:checkedButton="@+id/offer"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_widget_background"
+                    android:button="@null"
+
+                    android:gravity="center"
+                    android:text="YES"
+                    android:textColor="#313131" />
+
+                <RadioButton
+                    android:id="@+id/no"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_widget_background"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="NO"
+                    android:textColor="#313131" />
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/drink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+            android:visibility="invisible"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/MediumTop"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="How Often in a Week"
+            android:textColor="@color/darkgray"
+            android:textSize="25dp" />
+
+
+        <EditText
+            android:id="@+id/count"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="@drawable/shapeedit"
+            android:inputType="number"
+            android:paddingLeft="@dimen/dp5"
+            android:paddingRight="@dimen/dp5"
+            android:src="@drawable/heart" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btm1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp10"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left">
+
+            <ImageView
+                android:layout_width="@dimen/NEXTPEV_Large"
+                android:layout_height="@dimen/NEXTPEV_Large"
+                android:layout_marginLeft="@dimen/dp20"
+                android:id="@+id/prev"
+                android:src="@drawable/ic_chevron_left_black_24dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="@dimen/NEXTPEV_Large"
+                android:layout_height="@dimen/NEXTPEV_Large"
+                android:layout_marginRight="@dimen/dp20"
+                android:src="@drawable/ic_chevron_right_black_24dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>

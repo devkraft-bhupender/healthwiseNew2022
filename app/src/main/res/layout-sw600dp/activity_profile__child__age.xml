@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile__child__age"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/bottom"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="How old is your child ?"
+            android:textColor="@color/darkgray"
+            android:textSize="35dp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="@dimen/dp50"
+            android:layout_weight="1"
+            android:src="@drawable/child_age"/>
+
+
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/age_seekBar"
+            android:max="48"
+            android:progress="0"
+            android:thumb="@drawable/drop"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp35"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/enter_age"
+                android:layout_width="@dimen/dp150"
+                android:layout_height="@dimen/dp45"
+                android:background="@drawable/shapeedit"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_marginLeft="@dimen/dp40"
+                android:layout_gravity="center"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp25"
+                android:gravity="center"
+                android:text="Months" />
+
+        </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal"
+        android:id="@+id/btm1"
+
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/NEXTPEV_Medium"
+                android:layout_height="@dimen/NEXTPEV_Medium"
+                android:id="@+id/prev"
+                android:layout_marginLeft="@dimen/dp20"
+                android:src="@drawable/ic_chevron_left_black_24dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/NEXTPEV_Medium"
+                android:layout_height="@dimen/NEXTPEV_Medium"
+                android:id="@+id/next"
+                android:layout_marginRight="@dimen/dp20"
+                android:src="@drawable/ic_chevron_right_black_24dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>

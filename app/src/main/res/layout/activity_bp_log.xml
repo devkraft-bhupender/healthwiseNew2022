@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bp_log"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.hwi.health.Activitys.Logs.BP_log_Activity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:cardElevation="@dimen/dp5"
+        android:layout_above="@+id/bottom"
+        app:cardUseCompatPadding="true">
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="@dimen/dp10"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/darkgray"
+                android:gravity="center"
+                android:text="Your BP Log "/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:tint="@color/app_green"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/sphygmomanometer"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_marginTop="20dp"
+                android:text="Date"/>
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Date"
+                android:textSize="@dimen/dp15"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginTop="3dp"
+                android:padding="@dimen/dp5"
+                android:background="@drawable/edit_shape"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_marginTop="10dp"
+                android:text="Time"/>
+
+
+
+
+
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Time"
+                android:textSize="@dimen/dp15"
+                android:clickable="false"
+                android:layout_marginTop="3dp"
+                android:focusableInTouchMode="false"
+                android:padding="@dimen/dp5"
+                android:background="@drawable/edit_shape"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_marginTop="10dp"
+                android:text="Systolic (Upper)"/>
+
+
+            <EditText
+                android:id="@+id/Systolic"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Systolic (Upper)"
+                android:textSize="@dimen/dp15"
+                android:layout_marginTop="3dp"
+                 android:singleLine="true"
+                android:inputType="number"
+                android:padding="@dimen/dp5"
+                android:background="@drawable/edit_shape"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_marginTop="10dp"
+                android:text="Diastolic (Lower)"/>
+
+
+            <EditText
+                android:id="@+id/Diastolic"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Diastolic (Lower)"
+                android:textSize="@dimen/dp15"
+                android:layout_marginTop="3dp"
+                android:singleLine="true"
+                android:inputType="number"
+                android:padding="@dimen/dp5"
+                android:background="@drawable/edit_shape"
+                />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="@dimen/dp30"
+                android:background="@color/app_green"
+                android:text="Submit"
+                android:layout_gravity="center"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+ </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="#51000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#51000000"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/text_popup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:layout_gravity="center"
+                android:text="For which period do yo want to see the logs?"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+
+
+            <EditText
+                android:layout_width="@dimen/dp150"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_shape3"
+                android:clickable="false"
+                android:text="Select From Date"
+                android:paddingBottom="5dp"
+                android:textSize="13dp"
+                android:id="@+id/select_date"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:visibility="gone"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:layout_height="30dp" />
+
+
+            <EditText
+                android:layout_width="@dimen/dp150"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_shape3"
+                android:clickable="false"
+                android:text="Select To Date"
+                android:textSize="13dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/select_To_date"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="#000000"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:layout_height="30dp" />
+
+            <Button
+                android:id="@+id/go"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:background="@color/app_org"
+                android:text="Check"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/botm"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp10">
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@color/app_green"
+                android:text="Yes"
+                android:layout_marginRight="@dimen/dp5"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@color/app_green"
+                android:text="No"
+                android:layout_marginLeft="@dimen/dp5"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

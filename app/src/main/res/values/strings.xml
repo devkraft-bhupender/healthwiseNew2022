@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Health Wise Indian</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="facebook_app_id">1396573967205580</string>
+    <string name="fb_login_protocol_scheme">fb1396573967205580</string>
+    <string name="clientId">1066635562909-2p6db1f2i3l90t2ab5qe7g1v0irm0c5d.apps.googleusercontent.com</string>
+    <string name="set_this_as_serving_size">Set this as serving size</string>
+</resources>

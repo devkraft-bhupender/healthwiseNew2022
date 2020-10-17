@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "1066635562909",
+    "firebase_url": "https://healthwise-india.firebaseio.com",
+    "project_id": "healthwise-india",
+    "storage_bucket": "healthwise-india.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066635562909:android:c0e5e07db47357ac",
+        "android_client_info": {
+          "package_name": "com.hwi.health"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066635562909-f9u94a3rrl7n48a5hsr248vp7m1hv6jc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hwi.health",
+            "certificate_hash": "4112686e39b7267bee8a3780e73312aa1b4a85ec"
+          }
+        },
+        {
+          "client_id": "1066635562909-g0nagqf3abo6i71uteuorktojockdv93.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1066635562909-2p6db1f2i3l90t2ab5qe7g1v0irm0c5d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hwi.health",
+            "certificate_hash": "6df5ccf037ffc5c8bcf1943e1bfde82e22627474"
+          }
+        },
+        {
+          "client_id": "1066635562909-8tbr7chaob1vqdg7trq7fsgb6hf85ant.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1066635562909-g0nagqf3abo6i71uteuorktojockdv93.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqYj9_JRGXxO8IvyZAnXPTU3Xh_SsB65w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066635562909-g0nagqf3abo6i71uteuorktojockdv93.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

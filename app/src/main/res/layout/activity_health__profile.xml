@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_health__profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context="com.hwi.health.Activitys.Profile.Second.Health_Profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dp10"
+        android:layout_above="@+id/bottom">
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/text_dum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp15"
+            android:textColor="@color/app_green"
+            android:gravity="center"
+            android:text="This is dummy data Please fill your Advance Profile to get your Health Profile"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/adv_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:src="@drawable/health_hint">
+
+
+
+        </ImageView>
+
+        <!--   <TextView
+               android:id="@+id/adv_text"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:textSize="@dimen/dp20"
+               android:layout_gravity="center"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:text="Complete Advance Profile First"/>-->
+       <Button
+           android:visibility="gone"
+           android:id="@+id/btn_profile"
+           android:layout_width="wrap_content"
+           android:layout_height="35dp"
+           android:background="@color/app_green"
+           android:textColor="@color/white"
+           android:paddingRight="@dimen/dp5"
+           android:layout_gravity="center"
+           android:layout_marginBottom="30dp"
+           android:paddingLeft="@dimen/dp5"
+           android:text="Complete Your Health Profile"/>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/adv_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_green"
+                android:gravity="center"
+                android:textColor="#ffffff"
+               android:padding="@dimen/dp5"
+                android:text="Health Profile" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp80"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp80"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:singleLine="true"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center"
+                        android:text="Central obesity"></TextView>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:id="@+id/central_obesity"
+                        android:textSize="12dp"></TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp80"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="3dp"
+                        android:singleLine="true"
+                        android:text="Metabolic syndrome"></TextView>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:hint="Enter"
+                        android:background="@null"
+                        android:id="@+id/syndrome"
+                        android:textSize="12dp"></TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp80"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="Diabetes"></TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="LOW"
+                        android:gravity="center"
+                        android:background="@null"
+                        android:id="@+id/Diabetes"
+                        android:textSize="12dp"></TextView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp80"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp80"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="Prediabetes"></TextView>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:id="@+id/Prediabetes"
+                        android:textSize="12dp"></TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp80"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="High BP"></TextView>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:hint="Enter"
+                        android:singleLine="true"
+                        android:background="@null"
+                        android:id="@+id/High_BP"
+                        android:textSize="12dp"></TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp80"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:singleLine="true"
+                        android:layout_marginLeft="3dp"
+                        android:text="Weight Category"></TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="LOW"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:singleLine="true"
+                        android:id="@+id/heart_risk"
+                        android:textSize="12dp"></TextView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp80"
+                android:layout_marginBottom="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp80"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="Anaemia"></TextView>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:id="@+id/Anaemia"
+                        android:textSize="12dp"></TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp80"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="Vit B12 deficiency"></TextView>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:hint="Enter"
+                        android:background="@null"
+                        android:id="@+id/Vit_deficiency"
+                        android:textSize="12dp"></TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp80"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="Vit D deficiency"></TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="LOW"
+                        android:gravity="center"
+                        android:background="@null"
+                        android:id="@+id/Vit_D"
+                        android:textSize="12dp"></TextView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>

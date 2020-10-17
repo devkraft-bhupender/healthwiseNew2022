@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile__diabetic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".com.Activitys.Profile.First.Profile_Diabetic_7">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/bottom"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Are you diabetic"
+            android:textColor="@color/darkgray"
+            android:textSize="40dp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="@dimen/dp50"
+            android:layout_weight="1"
+            android:src="@drawable/diabetic"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp50"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/toggle"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/out_line"
+                android:checkedButton="@+id/offer"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_widget_background"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:checked="true"
+                    android:textSize="@dimen/dp20"
+                    android:text="YES"
+                    android:textColor="#313131" />
+
+                <RadioButton
+                    android:id="@+id/no"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_widget_background"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textSize="@dimen/dp20"
+                    android:text="NO"
+                    android:textColor="#313131" />
+
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal"
+        android:id="@+id/btm1"
+
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/NEXTPEV_Medium"
+                android:layout_height="@dimen/NEXTPEV_Medium"
+                android:id="@+id/prev"
+                android:layout_marginLeft="@dimen/dp20"
+                android:src="@drawable/ic_chevron_left_black_24dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/NEXTPEV_Medium"
+                android:id="@+id/next"
+                android:layout_height="@dimen/NEXTPEV_Medium"
+                android:layout_marginRight="@dimen/dp20"
+                android:src="@drawable/ic_chevron_right_black_24dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>

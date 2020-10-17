@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:background="@drawable/popup_base"
+    android:padding="@dimen/dp20"
+    android:layout_height="400dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp10">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Where you actually exercise"
+            android:textSize="12dp" />
+
+        <Spinner
+            android:id="@+id/actually"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@drawable/shapeedit5"></Spinner>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How did the exercise feel"
+            android:layout_marginTop="@dimen/dp20"
+            android:textSize="12dp" />
+
+        <Spinner
+            android:id="@+id/exercise_feel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@drawable/shapeedit5"></Spinner>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HeartRate"
+            android:layout_marginTop="@dimen/dp20"
+            android:textSize="12dp" />
+
+        <EditText
+            android:paddingLeft="@dimen/dp5"
+            android:id="@+id/heart_rate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@drawable/shapeedit5"/>
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:text="Submit"
+            android:layout_marginTop="@dimen/dp50"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@color/app_green"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+</LinearLayout>

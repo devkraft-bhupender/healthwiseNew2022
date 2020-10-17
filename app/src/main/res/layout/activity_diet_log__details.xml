@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hwi.health.Activitys.Logs.DietLog_Details">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/DietLogScroll"
+        android:fillViewport="true"
+        android:layout_above="@+id/bottom"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:orientation="vertical"
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            app:cardCornerRadius="@dimen/dp10"
+            app:cardElevation="@dimen/dp5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dp10"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/food_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:src="@drawable/fruit"
+                    android:tint="@color/app_green" />
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/search_food"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:singleLine="true"
+                    android:background="@drawable/spin_line"
+                    android:hint="Add Food Item(s)" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <com.hwi.health.Activitys.Plans.Excercize_plans.NonScrollListView
+                        android:id="@+id/lists"
+                        android:layout_width="match_parent"
+                        android:stackFromBottom="true"
+                        android:transcriptMode="alwaysScroll"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@drawable/button_base"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/checkss"
+                android:layout_width="@dimen/dp200"
+                android:layout_height="@dimen/dp40"
+                android:background="@drawable/button_shape_cal"
+                android:text="CHECK RESULT" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>
+

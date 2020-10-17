@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile__active_10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".com.Activitys.Profile.First.Profile_Active_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/bottom"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/SmallTop"
+            android:gravity="center"
+            android:text="Activity level"
+            android:textColor="@color/darkgray"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp30"
+            android:layout_weight="1"
+            android:src="@drawable/activity_level"/>
+
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/spinner"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@drawable/spinner_background"></Spinner>
+
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/spinner2"
+            android:layout_marginBottom="@dimen/dp80"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@drawable/spinner_background"></Spinner>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btm1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp10"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left">
+
+            <ImageView
+                android:layout_width="@dimen/NEXTPEV_Medium"
+                android:layout_height="@dimen/NEXTPEV_Medium"
+                android:layout_marginLeft="@dimen/dp20"
+                android:id="@+id/prev"
+                android:src="@drawable/ic_chevron_left_black_24dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="@dimen/NEXTPEV_Medium"
+                android:layout_height="@dimen/NEXTPEV_Medium"
+                android:layout_marginRight="@dimen/dp20"
+                android:src="@drawable/ic_chevron_right_black_24dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_alchol__result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".com.Activitys.More.Calculator_PKG.Alchol_Result">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dp10">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="@dimen/dp90"
+                    android:src="@drawable/beer"
+                    android:tint="@color/app_green" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ideal number of units to consume"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/units"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="6 Units"
+                        android:textColor="@color/app_green"
+                        android:textSize="30dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="Ideal number of calories to consume"
+                android:textSize="16dp" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:gravity="center"
+                android:elevation="@dimen/dp5"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/box"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/dietplan"
+                    android:orientation="vertical"
+                    android:layout_height="160dp">
+
+                    <TextView
+                        android:id="@+id/calories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="45"
+                        android:singleLine="true"
+                        android:textColor="@color/app_green"
+                        android:textSize="30dp" />
+                    <TextView
+                        android:id="@+id/diet_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:textColor="@color/app_green"
+                        android:textSize="25dp"
+                        android:text="Calories"/>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/box"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/exerciesplan"
+                    android:orientation="vertical"
+                    android:layout_height="160dp">
+                    <TextView
+                        android:id="@+id/Sugar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="45"
+                        android:singleLine="true"
+                        android:textColor="@color/app_green"
+                        android:textSize="30dp" />
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:textColor="@color/app_green"
+                        android:textSize="25dp"
+                        android:text="Sugar"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:gravity="center"
+                android:elevation="@dimen/dp5"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/box"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="160dp">
+
+                    <TextView
+                        android:id="@+id/Sodium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="45"
+                        android:singleLine="true"
+                        android:textColor="@color/app_green"
+                        android:textSize="30dp" />
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:textColor="@color/app_green"
+                        android:textSize="25dp"
+                        android:text="Sodium"/>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/box"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="160dp">
+                    <TextView
+                        android:id="@+id/Carbs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="45"
+                        android:singleLine="true"
+                        android:textColor="@color/app_green"
+                        android:textSize="30dp" />
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:textColor="@color/app_green"
+                        android:textSize="25dp"
+                        android:text="Carbs"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/box"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/dp15"
+                android:orientation="vertical"
+                android:layout_height="160dp">
+                <TextView
+                    android:id="@+id/Std_Size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="45"
+                    android:singleLine="true"
+                    android:textColor="@color/app_green"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:textColor="@color/app_green"
+                    android:textSize="25dp"
+                    android:text="Std Size Drinks"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp50"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_base"
+                    android:gravity="center"
+                    android:padding="@dimen/dp5">
+
+                    <Button
+                        android:id="@+id/edit_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_shape_cal"
+                        android:text="EDIT values entered"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>

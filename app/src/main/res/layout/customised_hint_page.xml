@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:focusableInTouchMode="false"
+    android:padding="@dimen/dp10"
+    android:paddingTop="@dimen/dp15"
+    android:paddingBottom="@dimen/dp20"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_green"
+        app:cardElevation="@dimen/dp5"
+        android:layout_above="@+id/bottom"
+        app:cardUseCompatPadding="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dp10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+              <!--  <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="This is approx diet plan we can Customise based your food preference"
+                    android:textColor="@color/app_green"
+                    android:textSize="@dimen/dp25" />
+    -->
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:src="@drawable/ic_clear_black_24dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Get your customized diet plan with\n many additional benefits"
+                    android:textColor="@color/app_green"
+                    android:textSize="@dimen/dp20" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/app_green"></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="A) It is customized for you after taking your particulars:"
+                    android:textColor="@color/app_green"
+                    android:textSize="@dimen/dp15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"
+                    android:text="Such as height, weight, age etc."
+
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:background="@color/app_green"></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="B) Is customized for your diet preferences:"
+                    android:textColor="@color/app_green"
+                    android:textSize="@dimen/dp15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"
+                    android:text="Non vegetarian or vegetarian  \ndiet plans"
+
+                     />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:background="@color/app_green"></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="C) Provides nutrients in the recommended range:"
+                    android:textColor="@color/app_green"
+                    android:textSize="@dimen/dp15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"
+                    android:text="In line with the RDA (Recommended Daily Allowance) for your age and gender. It is more accurate in calculating calories as well!"
+
+                   />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:background="@color/app_green"></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="D) Leaves you with some deficit calories:"
+                    android:textColor="@color/app_green"
+                    android:textSize="@dimen/dp15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"
+                    android:text="For snacking and indulgences"
+
+                     />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:background="@color/app_green"></View>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="E) You will get a daily menu plan:"
+                    android:textColor="@color/app_green"
+                    android:textSize="@dimen/dp15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"
+                    android:text="Telling you how much of each food group to eat and nalso recommendations on weekly requirements of some special food stuff"
+
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:background="@color/app_green"></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="F) You will see your nutritional dashboard:"
+                    android:textColor="@color/app_green"
+                    android:textSize="@dimen/dp15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"
+                    android:text="Showing how well will you fare in comparison with RDA and recommendations, if you follow the ‘HWI Ideal Diet Plan’"
+
+                     />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:background="@color/app_green"></View>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Get your customized diet plan"
+                    android:textColor="@color/app_green"
+                    android:textSize="@dimen/dp15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Get it Now?"
+                    android:textColor="@color/app_green"
+                    android:textSize="@dimen/dp15" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dp30">
+
+
+                    <Button
+                        android:id="@+id/yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp35"
+                        android:text="Yes"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:textColor="@color/white"
+                        android:background="@color/app_green"/>
+
+                    <Button
+                        android:id="@+id/no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp35"
+                        android:text="No"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:textColor="@color/white"
+                        android:background="@color/app_green"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

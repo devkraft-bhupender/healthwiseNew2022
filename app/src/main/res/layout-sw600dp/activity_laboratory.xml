@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_laboratory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hwi.health.Activitys.Profile.advanced_profile.LABORATORY">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btm"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                android:gravity="center"
+                android:text="LABORATORY TESTS"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/SmallText" />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/userimage"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_weight="0.6"-->
+                <!--android:layout_marginTop="@dimen/dp10"-->
+                <!--android:src="@drawable/user" />-->
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_marginTop="@dimen/dp20"-->
+                    <!--android:text="LABORATORY TESTS"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/textcolorPrimary"-->
+                    <!--android:textSize="20dp" />-->
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/fbcolor"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Hemoglobin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Hemoglobin(gm/dL)"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Hematocrit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Hematocrit(%))"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/blood_sugar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Fasting blood sugar(mg/dL)"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Blood lipid profile including :"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:textColor="@color/textcolorPrimary"
+                    android:textSize="20dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Total_cholesterol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Total cholesterol(mg/dL)"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/LDL_cholesterol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="LDL cholesterol(mg/dL)"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/HDL_cholesterol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="HDL cholesterol(mg/dL)"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Triglycerides"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Triglycerides(mg/dL)"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Vitamin_levels"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Vitamin D levels(ng/dL)"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Vitamin_B12_levels"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Vitamin B12 levels(pg/dL)"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/btm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left">
+
+                <ImageView
+                    android:id="@+id/prev"
+                    android:layout_width="@dimen/MediumText"
+                    android:layout_height="@dimen/MediumText"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:src="@drawable/ic_chevron_left_black_24dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <ImageView
+                    android:id="@+id/next"
+                    android:layout_width="@dimen/MediumText"
+                    android:layout_height="@dimen/MediumText"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:src="@drawable/ic_chevron_right_black_24dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>

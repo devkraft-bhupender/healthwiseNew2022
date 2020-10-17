@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="350dp"
+    android:padding="@dimen/dp10"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#51000000"
+      >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:orientation="vertical"
+        android:background="@color/app_org">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Send Email"
+            android:textSize="@dimen/dp20"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:background="@drawable/shapeedit3">
+
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_mail_outline_black_24dp"
+            android:padding="@dimen/dp5"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:layout_marginLeft="2dp"></View>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Email id"
+            android:textSize="@dimen/dp15"
+            android:layout_marginBottom="@dimen/dp10"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:padding="@dimen/dp5"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+           >
+
+
+            <Button
+                android:id="@+id/close"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@color/app_org"
+                android:text="Close"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp15"
+                android:layout_gravity="center"
+                android:textColor="@color/white" />
+    <Button
+        android:id="@+id/send"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@color/app_org"
+        android:text="Send"
+        android:layout_marginBottom="@dimen/dp15"
+        android:layout_gravity="center"
+        android:textColor="@color/white" />
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

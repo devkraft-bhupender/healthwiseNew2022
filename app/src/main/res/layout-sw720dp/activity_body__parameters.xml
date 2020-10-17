@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_body__parameters"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hwi.health.Activitys.Profile.advanced_profile.Body_PARAMETERS">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@id/btm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left">
+
+                <ImageView
+                    android:id="@+id/prev"
+                    android:layout_width="@dimen/NEXTPEV_Large"
+                    android:layout_height="@dimen/NEXTPEV_Large"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:src="@drawable/ic_chevron_left_black_24dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <ImageView
+                    android:id="@+id/next"
+                    android:layout_width="@dimen/NEXTPEV_Large"
+                    android:layout_height="@dimen/NEXTPEV_Large"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:src="@drawable/ic_chevron_right_black_24dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btm"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="BODY PARAMETERS"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/MediumText" />
+
+            <ImageView
+                android:id="@+id/userimage"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/dp20"
+                android:src="@drawable/user" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp25"
+                        android:text="Waist" />
+
+                    <SeekBar
+                        android:id="@+id/WaistseekBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:max="100"
+                        android:thumb="@drawable/drop" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical|center">
+
+                    <EditText
+                        android:id="@+id/enter_inc"
+                        android:layout_width="150dp"
+                        android:layout_height="@dimen/dp50"
+                        android:inputType="number"
+                        android:clickable="false"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:background="@drawable/shapeedit"
+                        android:gravity="center"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:layout_marginRight="@dimen/dp25"
+                        android:gravity="center"
+                        android:text="inches"
+                        android:clickable="false"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:textSize="@dimen/dp15"
+                        android:id="@+id/textView3" />
+
+                    <EditText
+                        android:id="@+id/enter_cmc"
+                        android:layout_width="150dp"
+                        android:layout_height="@dimen/dp50"
+                        android:inputType="number"
+                        android:background="@drawable/shapeedit"
+                        android:gravity="center"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:gravity="center"
+                        android:textSize="@dimen/dp15"
+                        android:text="cms" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:text="Blood Pressure" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="@dimen/dp20">
+
+                            <EditText
+                                android:id="@+id/Systolic"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp50"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="2dp"
+                                android:inputType="number"
+                                android:gravity="center"
+                                android:hint="Systolic/upper value"
+                                android:singleLine="true"
+                                android:textSize="18dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="@dimen/dp20">
+
+                            <EditText
+                                android:id="@+id/Diastolic"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp50"
+                                android:layout_gravity="center"
+                                android:inputType="number"
+                                android:gravity="center"
+                                android:hint="Diastolic/lower value"
+                                android:singleLine="true"
+                                android:textSize="18dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>

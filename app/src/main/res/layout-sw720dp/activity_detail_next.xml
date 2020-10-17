@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail_next"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".com.Activitys.Profile.Second.DetailNext">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp65"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            android:src="@drawable/science"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:textSize="@dimen/dp25"
+            android:text="Enter Lab Results"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/dp25"
+                android:layout_height="wrap_content"
+                android:text="Haemoglobin"/>
+
+            <Button
+                android:layout_width="@dimen/dp150"
+                android:background="@drawable/bluebutton"
+                android:text="Enter value"
+                android:layout_height="@dimen/dp50" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/dp25"
+                android:layout_height="wrap_content"
+                android:text="Fasting Blood Sugar"/>
+
+            <Button
+                android:layout_width="@dimen/dp150"
+                android:background="@drawable/bluebutton"
+                android:text="Enter value"
+                android:layout_height="@dimen/dp50" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/dp25"
+                android:layout_height="wrap_content"
+                android:text="Haemoglobin"/>
+
+            <Button
+                android:layout_width="@dimen/dp150"
+                android:background="@drawable/bluebutton"
+                android:text="Enter value"
+                android:layout_height="@dimen/dp50" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/dp25"
+                android:layout_height="wrap_content"
+                android:text="Fasting Blood Sugar"/>
+
+            <Button
+                android:layout_width="@dimen/dp150"
+                android:background="@drawable/bluebutton"
+                android:text="Enter value"
+                android:layout_height="@dimen/dp50" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="300dp"
+            android:background="@drawable/out_line_white"
+            android:text="Calculate"
+            android:id="@+id/next"
+
+            android:layout_marginTop="@dimen/dp60"
+            android:layout_height="@dimen/dp60" />
+
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/btm"
+        layout="@layout/bottom_layout" />
+</RelativeLayout>

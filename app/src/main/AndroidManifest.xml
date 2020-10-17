@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hwi.health">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- <uses-feature -->
+    <!-- android:name="android.hardware.camera" -->
+    <!-- android:required="false" /> -->
+
+    <permission
+        android:name="com.hwi.health.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="net.simplifiedcoding.androidgcm.permission.C2D_MESSAGE" />
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true"
+        android:hardwareAccelerated="false"
+        android:roundIcon="@mipmap/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="m">
+        <activity
+            android:name=".Activitys.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Activitys.AboutApp"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.ForgotPassword.Forgot_Password"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.ForgotPassword.Forgot_Password_Done"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Signup.CreateAccount"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Profile.First.Profile_Step1"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Profile.First.Profile_Step2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Profile.First.Profile_Pregnant_3"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Profile.First.Profile_Menstrul_Cycle_4"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Profile.First.Profile_Breast_Feeding_5"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Profile.First.Profile_Child_Age_6"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Profile.First.Profile_Diabetic_7"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Profile.First.Profile_Insulin_8"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Profile.First.Profile_Blood_Suger_9"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Profile.First.Profile_Active_10"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Profile.First.Profile_Food_habits_11"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Profile.Second.User_Profile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Home.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Logs.LogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.Logs.LodDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Plans.PlansActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Plans.PlansCategory"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.More.MoreActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Plans.Plan_Catge_Details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.More.Calculator"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.More.Calculator_PKG.BMI_Weighr_Loss"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.More.Calculator_PKG.HeartCheckup"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.More.Calculator_PKG.Eat_Out_Snacker"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.More.Calculator_PKG.Alcohol_Tracker"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.More.Calculator_PKG.Heart_Risk_Calculator"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.More.Calculator_PKG.Family_Oil_Calculator"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Plans.Excercize_plans.Excercisectivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Plans.Excercize_plans.ExcerciseView"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Plans.Excercize_plans.ExcerciseList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Profile.Second.User_Profile_Next"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Profile.Second.Details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Profile.Second.DetailNext"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.More.Calculator_PKG.Eat_out_Plan_Details"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.More.Calculator_PKG.Eat_out_Plan_Result"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.More.Calculator_PKG.Alchol_Detail"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activitys.More.Calculator_PKG.Alchol_Result"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Profile.First.Smoking"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Profile.First.Alcohol"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.AllTests.BMI.BMI_AND_WEIGHT_LOSS_CALCULATOR"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.AllTests.IdealDiat.IDEAL_DIET_PLAN"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.AllTests.BMI.BMI_Result"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.AllTests.IdealDiat.Ideal_Diat_plan_Adult"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.AllTests.IdealDiat.Ideal_Diat_plan_Adult_"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Activitys.AllTests.IdealDiat.Ideal_Diat_plan_Child_result"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Activitys.AllTests.ANALYSISADVICE.ANALYSIS_AND_ADVICE_2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.AllTests.ANALYSISADVICE.ANALYSIS_AND_ADVICE_1"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.AllTests.IdealDiat.Ideal_Diat_plan_child"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.AllTests.RISKCALCULATOR.RISK_CALCULATOR_2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.AllTests.RISKCALCULATOR.RISK_CALCULATOR_1"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.AllTests.OILCALCULATOR.FAMILY_OIL_CALCULATOR"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Web.Search"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Web.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.Logs.See_Past_Alcohol_Log"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.More.VideoConsultatn"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activitys.AllTests.ANALYSISADVICE.Analysis_Result" />
+        <activity android:name=".Activitys.AllTests.RISKCALCULATOR.Risk_Result" />
+        <activity
+            android:name=".edit_profile.Edit_profile_Activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.More.VideoConsultatn_dialog"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".community.Community_one" />
+        <activity android:name=".community.Community_two" />
+        <activity android:name=".community.Community_three" />
+        <activity android:name=".community.Community_four" />
+
+        <!-- GCM Receiver -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.hwi.health" />
+            </intent-filter>
+        </receiver>
+
+        <!-- GCM Receiver Service -->
+        <service
+            android:name=".gcm.GCMPushReceiverService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <!-- GCM Registration Intent Service -->
+        <service
+            android:name=".gcm.GCMRegistrationIntentService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Activitys.More.Welcome_page" />
+        <activity android:name=".Activitys.Profile.First.Profile_complete" />
+        <activity android:name=".Activitys.More.manage_report.Upload_file_list" />
+        <activity android:name=".Activitys.More.manage_report.Upload_file" />
+        <activity android:name=".Activitys.More.manage_report.WebActivity" />
+        <activity
+            android:name=".Activitys.Profile.advanced_profile.Body_PARAMETERS"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Profile.advanced_profile.LABORATORY"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Profile.advanced_profile.RISK_RELATED_QUESTIONS"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.AllTests.IdealDiat.Ideal_Diat_plan_Child_result2"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Activitys.AllTests.IdealDiat.Ideal_Diat_plan_Adult_result2" />
+        <activity android:name=".Activitys.Plans.Excercize_plans.ExcercisePlan_View" />
+        <activity android:name=".Activitys.AllTests.CUSTOMISED_DIET_PLAN.Customised_Diet_Plan" />
+        <activity android:name=".Activitys.AllTests.CUSTOMISED_DIET_PLAN.Customised_Diet_Plan_result" />
+        <activity android:name=".Activitys.AllTests.CUSTOMISED_DIET_PLAN.Major_Meals_Page1" />
+        <activity android:name=".Activitys.AllTests.CUSTOMISED_DIET_PLAN.Grains_dinner_page2" />
+        <activity android:name=".Activitys.AllTests.CUSTOMISED_DIET_PLAN.Type_of_rice_page3" />
+        <activity android:name=".Activitys.AllTests.CUSTOMISED_DIET_PLAN.Non_Veg_page4" />
+        <activity android:name=".Activitys.AllTests.CUSTOMISED_DIET_PLAN.Milk_page5" />
+        <activity android:name=".Activitys.AllTests.CUSTOMISED_DIET_PLAN.Food_oil" />
+        <activity android:name=".Activitys.AllTests.CUSTOMISED_DIET_PLAN.Cereals_page6" />
+        <activity android:name=".Activitys.AllTests.CUSTOMISED_DIET_PLAN.Milk_Break_page7" />
+        <activity android:name=".Activitys.AllTests.CUSTOMISED_DIET_PLAN.Vegetables_page8" />
+        <activity
+            android:name=".Activitys.Logs.Excercise_log.ExcerciseLogActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Logs.Excercise_log.ExcerciseList_log"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Logs.Excercise_log.ExcerciseLog_View"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Logs.Excercise_log.ExcerciseView_log"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Activitys.Logs.Excercise_log.Library_exercise_list" />
+        <activity
+            android:name=".Activitys.Logs.Excercise_log.ExcerciseView_Librarylog"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activitys.Logs.Aerobics_log.Aerobics_Exercise_log"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Activitys.Home.Aerobic_result_page" />
+        <activity android:name=".Activitys.Home.Resistance_result_page" />
+        <activity android:name=".Activitys.Plans.PlansHome_Activity" />
+        <activity android:name=".Activitys.Logs.DietLog_activity" />
+        <activity android:name=".Activitys.Logs.WeightLog_Activity" />
+        <activity android:name=".Activitys.Plans.SugarPlan_activity" />
+        <activity android:name=".Activitys.Plans.BPLogPlan_activity" />
+        <activity android:name=".Activitys.Plans.Excercize_plans.AerobicsExercise_plan" />
+        <activity android:name=".Activitys.Plans.Excercize_plans.ExcercisePlan_Home" />
+        <activity android:name=".Activitys.Plans.Excercize_plans.StrengthPlan_page" />
+        <activity android:name=".Activitys.Profile.Second.Current_Profile" />
+        <activity android:name=".Activitys.Profile.Second.Traget_Profile" />
+        <activity android:name=".Activitys.Profile.Second.Health_Profile" />
+        <activity android:name=".Activitys.Profile.Second.HeardRisk_Profile" />
+        <activity android:name=".Activitys.Profile.Second.User_Profile2" />
+        <activity android:name=".Activitys.Plans.Treatmentplan" />
+        <activity android:name=".Activitys.Plans.VaccinationPlan" />
+        <activity android:name=".Activitys.Plans.CancerPlan" />
+        <activity android:name=".Activitys.Plans.CancerResult" />
+        <activity android:name=".Activitys.Plans.Excercize_plans.WebView_plan" />
+        <activity android:name=".Activitys.Profile.First.Profile_Step3" />
+        <activity android:name=".Activitys.Profile.First.vity_Complete" />
+        <activity android:name=".Activitys.Logs.Weight_Log_Now" />
+        <activity android:name=".Activitys.Logs.BP_log_Activity" />
+        <activity android:name=".Activitys.Logs.Sugar_log_Activity" />
+        <activity
+            android:name=".Activitys.Logs.DietLog_Details"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Activitys.Logs.DietLog_Result" />
+        <activity android:name=".Activitys.Plans.Cancer_Yes_Result" />
+
+        <!-- fb -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <!-- fb -->
+
+        <activity android:name=".Activitys.Logs.See_Past_Diet_Log" />
+        <activity android:name=".Activitys.Plans.Search_Activity"></activity>
+    </application>
+
+</manifest>

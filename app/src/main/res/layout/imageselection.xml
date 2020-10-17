@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="210dp"
+    android:background="#54000000"
+    android:elevation="15dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Image"
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/offer1"
+            android:layout_width="230dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/out_line_orange"
+            android:drawableLeft="@drawable/ic_image_black_24dp"
+            android:padding="5dp"
+            android:text="Select From Gallery"
+            android:textAllCaps="true"
+            android:textColor="#ffff" />
+
+        <Button
+            android:id="@+id/offer2"
+            android:layout_width="230dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/out_line_orange"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/ic_camera_alt_black_24dp"
+            android:text="Select From Camera"
+            android:textAllCaps="true"
+            android:textColor="#ffff" />
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="230dp"
+            android:layout_height="28dp"
+            android:background="@drawable/out_line_gray"
+            android:padding="5dp"
+            android:text="Close"
+
+            android:textAllCaps="false"
+            android:textColor="#000" />
+
+    </LinearLayout>
+</LinearLayout>

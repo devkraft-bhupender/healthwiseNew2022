@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hwi.health.Activitys.Plans.CancerResult">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:cardElevation="@dimen/dp5"
+        android:layout_above="@+id/bottom"
+        app:cardUseCompatPadding="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="@dimen/dp10">
+        
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/error"
+            android:tint="@color/app_green"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/less_f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="Oral cancer screening every month is advised. \nYou can also do a testicular cancer self screen\n at the same time"
+                android:textSize="@dimen/dp15" />
+
+
+            <TextView
+                android:id="@+id/less_f_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp40"
+                android:gravity="center"
+                android:text=" http://cancerindia.org.in/cp/index.php/know-about-cancer/oral-cancer#early-detection"
+                android:textColor="@color/app_green"
+                android:textSize="@dimen/dp15" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/more_f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp50"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="Men and Women over 50 years of age who do\n not having any family history of colon cancer\n should get screening for colorectal cancer done \nby FOBT (Fecal Occult Blood Test 3 samples)"
+            android:textSize="@dimen/dp15"
+             />
+
+        <LinearLayout
+            android:id="@+id/more_t"
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PAP Smear :"
+                android:textColor="@color/app_green"
+                android:textSize="@dimen/dp20" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:text=". Sexually active women  aged 21 years or more should \nget a Pap smear done every three years"
+                android:textSize="@dimen/dp15" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/app_green"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:text="Women between 30-65 years of age should ideally have a \nHybrid test (Pap Smear+ HPV test) done and if it is normal,\n repeat every 5 years. However having a Pap smear \nevery three years is also acceptable"
+                android:textSize="@dimen/dp15" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/app_green"></View>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:text=". Even women who have received HPV vaccine\n need to get Pap tests done"
+                android:textSize="@dimen/dp15" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/app_green"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp20"
+                android:text=". Women over 65 should discuss the \nneed for Pap test with your doctor"
+                android:textSize="@dimen/dp15" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/app_green"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:text=". Women who have their uterus removed \ndo not need Pap smear"
+                android:textSize="@dimen/dp15" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/app_green"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="and  SBE : "
+                android:textColor="@color/app_green"
+                android:textSize="@dimen/dp20" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:text=".Women aged 20 years or more should do BSE\n (Breast Self Examination), \nonce every month (after your menses), \ncheck out the links to know how"
+                android:textSize="@dimen/dp15" />
+
+            <TextView
+                android:id="@+id/woman_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="http://www.breastcancer.org/symptoms/testing/types/sef_exam/bse_steps"
+                android:textColor="@color/app_green"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/more_f_f"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp50"
+            android:gravity="center"
+            android:text=".Men and Women over 50 years of age\n who do not having any family history of colon cancer should get screening for\n colorectal cancer done by FOBT (Fecal Occult Blood Test 3 samples) and Mammography  :\n
+Women between 45-55  years of age\n  should have CBE by a doctor and Mammography  annually\n
+After 55 years of age\n, mammogram once in two years\n should be done till they are normal"
+            android:textSize="@dimen/dp15"></TextView>
+    </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+</RelativeLayout>

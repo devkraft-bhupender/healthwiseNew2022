@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "504454996435",
+    "project_id": "hwi-application"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504454996435:android:c0e5e07db47357ac",
+        "android_client_info": {
+          "package_name": "com.hwi.health"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504454996435-qnaatdc83c67semj0ekj3ms7dcqbbrb2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hwi.health",
+            "certificate_hash": "08a8adb46e241cc8a9d797fc660b13defc356ac3"
+          }
+        },
+        {
+          "client_id": "504454996435-h9uoj8k9a7fb00nds3bdtmar67d3rbmg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPC0I0mt92J0OLOU4aXJ96z0jafQ2JLKE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

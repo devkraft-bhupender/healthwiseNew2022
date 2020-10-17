@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_excercise_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".com.Activitys.Plans.Excercize_plans.ExcerciseView">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#f2f2f2">
+
+        <ImageView
+            android:id="@+id/back_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp10"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_back_black_24dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Exercise"
+            android:layout_marginRight="@dimen/dp20"
+            android:textColor="@color/textcolorPrimary"
+            android:id="@+id/text"
+            android:textAllCaps="true"
+            android:singleLine="true"
+            android:textSize="16dp"
+            />
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/darkgray2"></View>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"></View>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/darkgrayback"></View>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:padding="@dimen/dp20"
+       android:orientation="vertical">
+      <!-- <VideoView
+           android:layout_width="match_parent"
+           android:layout_height="550dp"
+           android:layout_marginBottom="10dp"
+           android:id="@+id/videoview"/>
+-->
+       <com.google.android.youtube.player.YouTubePlayerView
+           android:id="@+id/youtube_view"
+           android:layout_width="match_parent"
+           android:layout_height="550dp"
+           android:scaleType="centerCrop"
+           />
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+
+           android:layout_marginTop="@dimen/dp30"
+           android:layout_height="match_parent">
+
+          <!-- <ProgressBar
+               style="?android:attr/progressBarStyleHorizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/progressBar" />
+
+-->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:padding="@dimen/dp20"
+
+               android:layout_height="match_parent">
+
+               <ImageView
+                   android:id="@+id/start"
+                   android:layout_width="120dp"
+                   android:layout_height="120dp"
+                   android:textColor="@color/white"
+                   android:tint="@color/app_green"
+                   android:src="@drawable/play_button"/>
+
+               <ImageView
+                   android:visibility="gone"
+                   android:id="@+id/play"
+                   android:layout_width="120dp"
+                   android:layout_height="120dp"
+                   android:textColor="@color/white"
+                   android:tint="@color/app_green"
+                   android:src="@drawable/play_button"/>
+
+               <ImageView
+                   android:visibility="gone"
+                   android:id="@+id/close"
+                   android:layout_width="120dp"
+                   android:layout_height="120dp"
+                   android:textColor="@color/white"
+                   android:tint="@color/app_green"
+                   android:src="@drawable/pause"/>
+
+               <ImageView
+                   android:visibility="gone"
+                   android:id="@+id/replay"
+                   android:layout_width="120dp"
+                   android:layout_height="120dp"
+                   android:textColor="@color/white"
+                   android:tint="@color/app_green"
+                   android:src="@drawable/replay"/>
+           </LinearLayout>
+
+
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+   </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/bottom_layout2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom2"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        >
+
+        <include
+            android:id="@+id/btm"
+            layout="@layout/excercise_video_page" />
+
+    </RelativeLayout>
+</RelativeLayout>
