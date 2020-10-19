@@ -465,9 +465,9 @@ public class Vegetables_page8 extends AppCompatActivity implements BaseUrl, View
                     String Indian_Diet_Brown_Bread = Large_Bread.getString("Basic Indian Diet");
                     String Optimized_Brown_Bread = Large_Bread.getString("Optimized Indian diet");
                     String Health_Risks_Brown_Bread = Large_Bread.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Brown Bread", "1 Large Bread", Indian_Diet_Brown_Bread, Optimized_Brown_Bread, Health_Risks_Brown_Bread, R.drawable.bread));
+//                    datalist.add(new customized_model("Brown Bread", "1 Large Bread", Indian_Diet_Brown_Bread, Optimized_Brown_Bread, Health_Risks_Brown_Bread, R.drawable.bread));
                     if (!checkAddition(Indian_Diet_Brown_Bread,Optimized_Brown_Bread,Health_Risks_Brown_Bread)){}
-//                    else {datalist.add(new customized_model("Brown Bread", "1 Large Bread", Indian_Diet_Brown_Bread, Optimized_Brown_Bread, Health_Risks_Brown_Bread, R.drawable.bread));}
+                    else {datalist.add(new customized_model("Brown Bread", "1 Large Bread", Indian_Diet_Brown_Bread, Optimized_Brown_Bread, Health_Risks_Brown_Bread, R.drawable.bread));}
 
 
 
@@ -476,28 +476,28 @@ public class Vegetables_page8 extends AppCompatActivity implements BaseUrl, View
                     String Indian_Diet_White_Bread = White_Bread_Large.getString("Basic Indian Diet");
                     String Optimized_White_Bread = White_Bread_Large.getString("Optimized Indian diet");
                     String Health_Risks_White_Bread = White_Bread_Large.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("White Bread", "1 Large Bread", Indian_Diet_White_Bread, Optimized_White_Bread, Health_Risks_White_Bread, R.drawable.bread));
+//                    datalist.add(new customized_model("White Bread", "1 Large Bread", Indian_Diet_White_Bread, Optimized_White_Bread, Health_Risks_White_Bread, R.drawable.bread));
                     if (!checkAddition(Indian_Diet_White_Bread,Optimized_White_Bread,Health_Risks_White_Bread)){}
-//                    else {datalist.add(new customized_model("White Bread", "1 Large Bread", Indian_Diet_White_Bread, Optimized_White_Bread, Health_Risks_White_Bread, R.drawable.bread));}
+                    else {datalist.add(new customized_model("White Bread", "1 Large Bread", Indian_Diet_White_Bread, Optimized_White_Bread, Health_Risks_White_Bread, R.drawable.bread));}
 
                     JSONObject Cornflakes = jo2.getJSONObject("Cornflakes");
                     JSONObject Cup = Cornflakes.getJSONObject("1 Cup");
                     String Indian_Diet_Cornflakes = Cup.getString("Basic Indian Diet");
                     String Optimized_Cornflakes = Cup.getString("Optimized Indian diet");
                     String Health_Risks_Cornflakes = Cup.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Cornflakes", "1 Cup", Indian_Diet_Cornflakes, Optimized_Cornflakes, Health_Risks_Cornflakes, R.drawable.cornflakes));
+//                    datalist.add(new customized_model("Cornflakes", "1 Cup", Indian_Diet_Cornflakes, Optimized_Cornflakes, Health_Risks_Cornflakes, R.drawable.cornflakes));
 
                     if (!checkAddition(Indian_Diet_Cornflakes,Optimized_Cornflakes,Health_Risks_Cornflakes)){}
-//                    else {datalist.add(new customized_model("Cornflakes", "1 Cup", Indian_Diet_Cornflakes, Optimized_Cornflakes, Health_Risks_Cornflakes, R.drawable.cornflakes));}
+                    else {datalist.add(new customized_model("Cornflakes", "1 Cup", Indian_Diet_Cornflakes, Optimized_Cornflakes, Health_Risks_Cornflakes, R.drawable.cornflakes));}
 
                     JSONObject Muesli = jo2.getJSONObject("Muesli");
                     JSONObject Muesli_cup = Muesli.getJSONObject("1 Cup");
                     String Indian_Diet_Muesli = Muesli_cup.getString("Basic Indian Diet");
                     String Optimized_Muesli = Muesli_cup.getString("Optimized Indian diet");
                     String Health_Risks_Muesli = Muesli_cup.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Muesli", "1 Cup", Indian_Diet_Muesli, Optimized_Muesli, Health_Risks_Muesli, R.drawable.muesli));
+//                    datalist.add(new customized_model("Muesli", "1 Cup", Indian_Diet_Muesli, Optimized_Muesli, Health_Risks_Muesli, R.drawable.muesli));
                     if (!checkAddition(Indian_Diet_Muesli,Optimized_Muesli,Health_Risks_Muesli)){}
-//                    else {datalist.add(new customized_model("Muesli", "1 Cup", Indian_Diet_Muesli, Optimized_Muesli, Health_Risks_Muesli, R.drawable.muesli));}
+                    else {datalist.add(new customized_model("Muesli", "1 Cup", Indian_Diet_Muesli, Optimized_Muesli, Health_Risks_Muesli, R.drawable.muesli));}
 
 
                     JSONObject Oats = jo2.getJSONObject("Oats");
@@ -505,29 +505,29 @@ public class Vegetables_page8 extends AppCompatActivity implements BaseUrl, View
                     String Indian_Diet_Oats = Oats_cup.getString("Basic Indian Diet");
                     String Optimized_Oats = Oats_cup.getString("Optimized Indian diet");
                     String Health_Risks_Oats = Oats_cup.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Oats", "1/2 cup cooked", Indian_Diet_Oats, Optimized_Oats, Health_Risks_Oats, R.drawable.oats));
+//                    datalist.add(new customized_model("Oats", "1/2 cup cooked", Indian_Diet_Oats, Optimized_Oats, Health_Risks_Oats, R.drawable.oats));
 
                     if (!checkAddition(Indian_Diet_Oats,Optimized_Oats,Health_Risks_Oats)){}
-//                    else {datalist.add(new customized_model("Oats", "1/2 cup cooked", Indian_Diet_Oats, Optimized_Oats, Health_Risks_Oats, R.drawable.oats));}
+                    else {datalist.add(new customized_model("Oats", "1/2 cup cooked", Indian_Diet_Oats, Optimized_Oats, Health_Risks_Oats, R.drawable.oats));}
 
                     JSONObject Roti_in_Breakfast = jo2.getJSONObject("Roti in Breakfast");
                     JSONObject parantha = Roti_in_Breakfast.getJSONObject("1 roti or 1 parantha (excluding oil and stuffing)");
                     String Indian_Diet_parantha = parantha.getString("Basic Indian Diet");
                     String Optimized_parantha = parantha.getString("Optimized Indian diet");
                     String Health_Risks_parantha = parantha.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Roti in Breakfast", "1 roti or 1 parantha (excluding oil and stuffing)", Indian_Diet_parantha, Optimized_parantha, Health_Risks_parantha, R.drawable.chapati));
+//                    datalist.add(new customized_model("Roti in Breakfast", "1 roti or 1 parantha (excluding oil and stuffing)", Indian_Diet_parantha, Optimized_parantha, Health_Risks_parantha, R.drawable.chapati));
 
                     if (!checkAddition(Indian_Diet_parantha,Optimized_parantha,Health_Risks_parantha)){}
-//                    else {datalist.add(new customized_model("Roti in Breakfast", "1 roti or 1 parantha (excluding oil and stuffing)", Indian_Diet_parantha, Optimized_parantha, Health_Risks_parantha, R.drawable.chapati));}
+                    else {datalist.add(new customized_model("Roti in Breakfast", "1 roti or 1 parantha (excluding oil and stuffing)", Indian_Diet_parantha, Optimized_parantha, Health_Risks_parantha, R.drawable.chapati));}
 
                     JSONObject Milk_curd = jo2.getJSONObject("Milk/curd");
                     JSONObject Milk_curd_cup = Milk_curd.getJSONObject("1 cup= 200 ml");
                     String Indian_Diet_Milk_curd = Milk_curd_cup.getString("Basic Indian Diet");
                     String Optimized_Milk_curd = Milk_curd_cup.getString("Optimized Indian diet");
                     String Health_Risks_Milk_curd = Milk_curd_cup.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Milk/curd", "1 cup=200 ml", Indian_Diet_Milk_curd, Optimized_Milk_curd, Health_Risks_Milk_curd, R.drawable.milk));
+//                    datalist.add(new customized_model("Milk/curd", "1 cup=200 ml", Indian_Diet_Milk_curd, Optimized_Milk_curd, Health_Risks_Milk_curd, R.drawable.milk));
                     if (!checkAddition(Indian_Diet_Milk_curd,Optimized_Milk_curd,Health_Risks_Milk_curd)){}
-//                    else {datalist.add(new customized_model("Milk/curd", "1 cup=200 ml", Indian_Diet_Milk_curd, Optimized_Milk_curd, Health_Risks_Milk_curd, R.drawable.milk));}
+                    else {datalist.add(new customized_model("Milk/curd", "1 cup=200 ml", Indian_Diet_Milk_curd, Optimized_Milk_curd, Health_Risks_Milk_curd, R.drawable.milk));}
 
                     JSONObject Fruits = jo2.getJSONObject("Fruits");
                     JSONObject Fruits_cup = Fruits.getJSONObject("1 medium size fruit or 1/2 cup cut fruit OR 1/2 cup fruit juice");
