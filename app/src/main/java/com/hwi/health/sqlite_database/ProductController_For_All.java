@@ -317,6 +317,85 @@ public class ProductController_For_All {
 
     }
 
+    public ArrayList<DietLog_Models> getFoodDatadietlog(String user_id, String _select_dite_type, String strDate, String endDate,int insertedelement) {
+        Cursor cr = null;
+        ArrayList<DietLog_Models> alist = new ArrayList<>();
+        DBHelper helper = new DBHelper(context, DBHelper.DataBaseName, null,
+                DBHelper.Version);
+
+
+        // cr = db.rawQuery("SELECT * FROM " + DBHelper.TableFoodData + " WHERE user_id = ?", new String[]{user_id + ""});
+
+        SQLiteDatabase db = helper.getWritableDatabase();
+
+
+        //     cr = db.rawQuery("SELECT * FROM " + DBHelper.TableFoodData + " WHERE date_ BETWEEN ? AND ? AND user_id = ?", new String[]{cdate,todate,user_id});
+
+
+        if (_select_dite_type.equals("0")) {
+
+            Log.e("query",": "+"SELECT * FROM " + DBHelper.TableFoodData + " WHERE user_id = "+user_id+" ORDER BY ids DESC LIMIT 1");
+            cr = db.rawQuery("SELECT * FROM " + DBHelper.TableFoodData + " WHERE user_id = ? ORDER BY ids DESC LIMIT 1", new String[]{user_id + ""});
+
+        }else if (_select_dite_type.equals("1")) {
+            cr = db.rawQuery("SELECT * FROM " + DBHelper.TableFoodData + " WHERE date_ >= DATETIME('now', '-1 day') AND user_id = ?  ORDER BY ids DESC", new String[]{user_id + ""});
+        } else if (_select_dite_type.equals("2")) {
+            cr = db.rawQuery("SELECT * FROM " + DBHelper.TableFoodData + " WHERE date_ >= DATETIME('now', '-7 day') AND user_id = ?  ORDER BY ids DESC", new String[]{user_id + ""});
+        } else if (_select_dite_type.equals("3")) {
+            cr = db.rawQuery("SELECT * FROM " + DBHelper.TableFoodData + " WHERE date_ >= DATETIME('now', '-31 day') AND user_id = ?  ORDER BY ids DESC", new String[]{user_id + ""});
+        } else if (_select_dite_type.equals("4")) {
+//            cr = db.rawQuery("SELECT * FROM " + DBHelper.TableFoodData + " WHERE date_ = ? AND user_id = ?  ORDER BY ids DESC", new String[]{strDate, user_id + ""});
+            try {
+                Date one = new SimpleDateFormat("yyyy-MM-dd").parse(strDate);
+                Date two = new SimpleDateFormat("yyyy-MM-dd").parse(endDate);
+
+                if (one.before(two)) {
+                    cr = db.rawQuery("SELECT * FROM " + DBHelper.TableFoodData + " WHERE date_  BETWEEN ? AND ? AND user_id = ?  ORDER BY ids DESC", new String[]{strDate, endDate, user_id + ""});
+                } else if (one.before(two)) {
+                    cr = db.rawQuery("SELECT * FROM " + DBHelper.TableFoodData + " WHERE date_  BETWEEN ? AND ? AND user_id = ?  ORDER BY ids DESC", new String[]{strDate, endDate, user_id + ""});
+                } else {
+                    cr = db.rawQuery("SELECT * FROM " + DBHelper.TableFoodData + " WHERE date_  BETWEEN ? AND ? AND user_id = ?  ORDER BY ids DESC", new String[]{endDate, strDate, user_id + ""});
+                }
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+
+        } else if (_select_dite_type.equals("5")) {
+            cr = db.rawQuery("SELECT * FROM " + DBHelper.TableFoodData + " WHERE  user_id = ? ORDER BY ids DESC LIMIT ?", new String[]{user_id , insertedelement  + ""});
+        } else {
+            cr = db.rawQuery("SELECT * FROM " + DBHelper.TableFoodData + " WHERE date_ >= DATETIME('now', '-1000 day') AND user_id = ?  ORDER BY ids DESC", new String[]{user_id + ""});
+        }
+
+        while (cr.moveToNext() == true) {
+            String name = cr.getString(1);
+            String colories = cr.getString(3);
+            String protine = cr.getString(4);
+            String fat = cr.getString(5);
+            String carbs = cr.getString(6);
+            String sugar = cr.getString(7);
+            String fiber = cr.getString(8);
+            String sat_fat = cr.getString(9);
+            String chole = cr.getString(10);
+            String sodium = cr.getString(11);
+            String date = cr.getString(12);
+            String food_type = cr.getString(14);
+
+//            float pro = Float.parseFloat(protine);
+//            float ft = Float.parseFloat(fat);
+//            float car = Float.parseFloat(carbs);
+//
+//            float Carbs_mul = car * 3.2f;
+//            float Protein_mul = pro * 4.0f;
+//            float Fat_mul = ft * 9.0f;
+//
+//            float calories_cal = Carbs_mul + Protein_mul + Fat_mul;
+            alist.add(new DietLog_Models(name, colories,protine, fat, carbs, sugar, fiber, sat_fat, chole, sodium,  "", date, food_type));
+        }
+
+        return alist;
+
+    }
+
     /////////////////Alchol result save////////////////
 
     public boolean SaveAlchol(String food_data, String current_date, String calories, String carbs, String sugar, String sodium, String Sat_size, String units, String user_id) {

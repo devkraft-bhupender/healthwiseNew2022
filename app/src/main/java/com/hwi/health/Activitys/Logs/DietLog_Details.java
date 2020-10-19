@@ -80,6 +80,7 @@ public class DietLog_Details extends AppCompatActivity implements View.OnClickLi
     ProductController_For_All controller = new ProductController_For_All(DietLog_Details.this);
     private static int code = 104;
     ScrollView dietLogScroll=null;
+    int Totalinsertedelement = 0;
 
     DBHelper helper=null;
 
@@ -405,6 +406,7 @@ public class DietLog_Details extends AppCompatActivity implements View.OnClickLi
                     boolean b  = false;
 
                     for (int i = 0; i < list_get.size(); i++) {
+                        Totalinsertedelement = Totalinsertedelement + 1;
                         DietLog_Models am = list_get.get(i);
                         controller.addProductLog(am);
                         float energe = Float.parseFloat(am.getEnergy());
@@ -528,6 +530,7 @@ public class DietLog_Details extends AppCompatActivity implements View.OnClickLi
                         SharedPreferences sharedPreferences = getSharedPreferences("Date", MODE_PRIVATE);
                         SharedPreferences.Editor editor = sharedPreferences.edit();
                         editor.putString("select", "5");
+                        editor.putInt("insertedelement",Totalinsertedelement);
                         editor.commit();
 
                         new MyIntent(DietLog_Details.this, See_Past_Diet_Log.class, R.anim.enter, R.anim.exit);

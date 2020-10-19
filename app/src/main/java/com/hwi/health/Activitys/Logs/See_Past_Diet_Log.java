@@ -287,11 +287,12 @@ public class See_Past_Diet_Log extends AppCompatActivity implements View.OnClick
         String endDate = sharedPreferences.getString("endDate", "");
         String endDate2 = sharedPreferences.getString("endDate2", "");
         final String select = sharedPreferences.getString("select", "5");
+        int insertedelement = sharedPreferences.getInt("insertedelement", 1);
 
         Log.e("strDate", strDate);
 
         try {
-            diet_list = new ProductController_For_All(See_Past_Diet_Log.this).getFoodData(user_id, select, strDate, endDate);
+            diet_list = new ProductController_For_All(See_Past_Diet_Log.this).getFoodDatadietlog(user_id, select, strDate, endDate,insertedelement);
 
             if (diet_list.isEmpty()) {
                 tt.setVisibility(View.VISIBLE);
