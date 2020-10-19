@@ -241,7 +241,6 @@ public class ProductController_For_All {
     public ArrayList<DietLog_Models> getFoodData(String user_id, String _select_dite_type, String strDate, String endDate) {
         Cursor cr = null;
         ArrayList<DietLog_Models> alist = new ArrayList<>();
-
         DBHelper helper = new DBHelper(context, DBHelper.DataBaseName, null,
                 DBHelper.Version);
 

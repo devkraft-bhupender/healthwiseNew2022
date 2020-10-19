@@ -321,7 +321,6 @@ public class DietLog_Details extends AppCompatActivity implements View.OnClickLi
     }
     @Override
     public void onBackPressed() {
-
         if (list_get.size() == 0) {
             controller.trancate();
             new MyIntent(DietLog_Details.this, DietLog_activity.class, R.anim.enter2, R.anim.exit2);
@@ -403,6 +402,7 @@ public class DietLog_Details extends AppCompatActivity implements View.OnClickLi
             } else {
 
                 try {
+                    boolean b  = false;
 
                     for (int i = 0; i < list_get.size(); i++) {
                         DietLog_Models am = list_get.get(i);
@@ -422,13 +422,14 @@ public class DietLog_Details extends AppCompatActivity implements View.OnClickLi
                         if (food_data.equals("")) {
                             food_data = food_name;
                         } else {
-                            food_data = food_data + ", " + food_name;
+//                            food_data = food_data + ", " + food_name;
+                            food_data = food_name;
                         }
 
                         Log.e("food_data", food_data + "");
                         Log.e("resulttttt", energe + ".." + Carbs + ".." + Sugar + ".." + Protein + ".." + Fat + ".." + fibre + ".." + sat_fat + ".." + getnumber);
 
-                      float get_num = Float.valueOf(getnumber);
+                        float get_num = Float.valueOf(getnumber);
                         total_count = total_count + get_num;
                         float ene = energe * get_num;
                         float car = Carbs * get_num;
@@ -443,49 +444,49 @@ public class DietLog_Details extends AppCompatActivity implements View.OnClickLi
                         //   controller.addFoodData_Preview(food_name, ene+"", pro+"", fatt+"", car+"", sug+"", fibb+"", total_sat_fat,total_souium,total_cholestrol, current_date, user_id, Diet_log_key);
 
 
-                        totalEnergy = totalEnergy + ene;
-                        totalCarbs = totalCarbs + car;
-                        totalSugar = totalSugar + sug;
-                        totalProtein = totalProtein + pro;
-                        totalFat = totalFat + fatt;
-                        totalfibre = totalfibre + fibb;
-                        totalsat_fat = totalsat_fat + satfat;
-                        totalsouium = totalsouium + souiumss;
-                        totalcholestrol = totalcholestrol + Cholestrolss;
+                        totalEnergy =  ene;
+                        totalCarbs =  car;
+                        totalSugar =  sug;
+                        totalProtein = pro;
+                        totalFat = fatt;
+                        totalfibre = fibb;
+                        totalsat_fat = satfat;
+                        totalsouium = souiumss;
+                        totalcholestrol =  Cholestrolss;
 
-                    }
+
 
                     if (Diet_log_key.equals("Breakfast")) {
-                        _calories = CalorieCalculator.getMealNutrientCalorieValue("Breakfast","Total","Calories",getApplicationContext());
-                        _carb =     CalorieCalculator.getMealNutrientCalorieValue("Breakfast","Total","carb",getApplicationContext());
-                        _prot =     CalorieCalculator.getMealNutrientCalorieValue("Breakfast","Total","prot",getApplicationContext());
-                        _fat =      CalorieCalculator.getMealNutrientCalorieValue("Breakfast","Total","fat",getApplicationContext());
-                        _SFA =      CalorieCalculator.getMealNutrientCalorieValue("Breakfast","Total","SFA",getApplicationContext());
-                        _chole =    CalorieCalculator.getMealNutrientCalorieValue("Breakfast","Total","chole",getApplicationContext());
-                        _sugar =    CalorieCalculator.getMealNutrientCalorieValue("Breakfast","Total","sugar",getApplicationContext());
-                        _sodium =   CalorieCalculator.getMealNutrientCalorieValue("Breakfast","Total","sodium",getApplicationContext());
-                        _fibre =    CalorieCalculator.getMealNutrientCalorieValue("Breakfast","Total","fibre",getApplicationContext());
+                        _calories = CalorieCalculator.getMealNutrientCalorieValue("Breakfast", "Total", "Calories", getApplicationContext());
+                        _carb = CalorieCalculator.getMealNutrientCalorieValue("Breakfast", "Total", "carb", getApplicationContext());
+                        _prot = CalorieCalculator.getMealNutrientCalorieValue("Breakfast", "Total", "prot", getApplicationContext());
+                        _fat = CalorieCalculator.getMealNutrientCalorieValue("Breakfast", "Total", "fat", getApplicationContext());
+                        _SFA = CalorieCalculator.getMealNutrientCalorieValue("Breakfast", "Total", "SFA", getApplicationContext());
+                        _chole = CalorieCalculator.getMealNutrientCalorieValue("Breakfast", "Total", "chole", getApplicationContext());
+                        _sugar = CalorieCalculator.getMealNutrientCalorieValue("Breakfast", "Total", "sugar", getApplicationContext());
+                        _sodium = CalorieCalculator.getMealNutrientCalorieValue("Breakfast", "Total", "sodium", getApplicationContext());
+                        _fibre = CalorieCalculator.getMealNutrientCalorieValue("Breakfast", "Total", "fibre", getApplicationContext());
                     } else if (Diet_log_key.equals("Lunch")) {
-                        _calories = _calories = CalorieCalculator.getMealNutrientCalorieValue("Lunch","Total","Calories",getApplicationContext());
-                        _carb =     CalorieCalculator.getMealNutrientCalorieValue("Lunch","Total","carb",getApplicationContext());
-                        _prot =     CalorieCalculator.getMealNutrientCalorieValue("Lunch","Total","prot",getApplicationContext());
-                        _fat =      CalorieCalculator.getMealNutrientCalorieValue("Lunch","Total","fat",getApplicationContext());
-                        _SFA =      CalorieCalculator.getMealNutrientCalorieValue("Lunch","Total","SFA",getApplicationContext());
-                        _chole =    CalorieCalculator.getMealNutrientCalorieValue("Lunch","Total","chole",getApplicationContext());
-                        _sugar =    CalorieCalculator.getMealNutrientCalorieValue("Lunch","Total","sugar",getApplicationContext());
-                        _sodium =   CalorieCalculator.getMealNutrientCalorieValue("Lunch","Total","sodium",getApplicationContext());
-                        _fibre =    CalorieCalculator.getMealNutrientCalorieValue("Lunch","Total","fibre",getApplicationContext());
+                        _calories = _calories = CalorieCalculator.getMealNutrientCalorieValue("Lunch", "Total", "Calories", getApplicationContext());
+                        _carb = CalorieCalculator.getMealNutrientCalorieValue("Lunch", "Total", "carb", getApplicationContext());
+                        _prot = CalorieCalculator.getMealNutrientCalorieValue("Lunch", "Total", "prot", getApplicationContext());
+                        _fat = CalorieCalculator.getMealNutrientCalorieValue("Lunch", "Total", "fat", getApplicationContext());
+                        _SFA = CalorieCalculator.getMealNutrientCalorieValue("Lunch", "Total", "SFA", getApplicationContext());
+                        _chole = CalorieCalculator.getMealNutrientCalorieValue("Lunch", "Total", "chole", getApplicationContext());
+                        _sugar = CalorieCalculator.getMealNutrientCalorieValue("Lunch", "Total", "sugar", getApplicationContext());
+                        _sodium = CalorieCalculator.getMealNutrientCalorieValue("Lunch", "Total", "sodium", getApplicationContext());
+                        _fibre = CalorieCalculator.getMealNutrientCalorieValue("Lunch", "Total", "fibre", getApplicationContext());
 
                     } else if (Diet_log_key.equals("Dinner")) {
-                        _calories = CalorieCalculator.getMealNutrientCalorieValue("Dinner","Total","Calories",getApplicationContext());
-                        _carb =     CalorieCalculator.getMealNutrientCalorieValue("Dinner","Total","carb",getApplicationContext());
-                        _prot =     CalorieCalculator.getMealNutrientCalorieValue("Dinner","Total","prot",getApplicationContext());
-                        _fat =      CalorieCalculator.getMealNutrientCalorieValue("Dinner","Total","fat",getApplicationContext());
-                        _SFA =      CalorieCalculator.getMealNutrientCalorieValue("Dinner","Total","SFA",getApplicationContext());
-                        _chole =    CalorieCalculator.getMealNutrientCalorieValue("Dinner","Total","chole",getApplicationContext());
-                        _sugar =    CalorieCalculator.getMealNutrientCalorieValue("Dinner","Total","sugar",getApplicationContext());
-                        _sodium =   CalorieCalculator.getMealNutrientCalorieValue("Dinner","Total","sodium",getApplicationContext());
-                        _fibre =    CalorieCalculator.getMealNutrientCalorieValue("Dinner","Total","fibre",getApplicationContext());
+                        _calories = CalorieCalculator.getMealNutrientCalorieValue("Dinner", "Total", "Calories", getApplicationContext());
+                        _carb = CalorieCalculator.getMealNutrientCalorieValue("Dinner", "Total", "carb", getApplicationContext());
+                        _prot = CalorieCalculator.getMealNutrientCalorieValue("Dinner", "Total", "prot", getApplicationContext());
+                        _fat = CalorieCalculator.getMealNutrientCalorieValue("Dinner", "Total", "fat", getApplicationContext());
+                        _SFA = CalorieCalculator.getMealNutrientCalorieValue("Dinner", "Total", "SFA", getApplicationContext());
+                        _chole = CalorieCalculator.getMealNutrientCalorieValue("Dinner", "Total", "chole", getApplicationContext());
+                        _sugar = CalorieCalculator.getMealNutrientCalorieValue("Dinner", "Total", "sugar", getApplicationContext());
+                        _sodium = CalorieCalculator.getMealNutrientCalorieValue("Dinner", "Total", "sodium", getApplicationContext());
+                        _fibre = CalorieCalculator.getMealNutrientCalorieValue("Dinner", "Total", "fibre", getApplicationContext());
                     } else if (Diet_log_key.equals("Snacks")) {
                         _calories = CalorieCalculator.getMealNutrientCalorieValue("Snacks", "Total", "Calories", getApplicationContext());
                         _carb = CalorieCalculator.getMealNutrientCalorieValue("Snacks", "Total", "carb", getApplicationContext());
@@ -508,8 +509,7 @@ public class DietLog_Details extends AppCompatActivity implements View.OnClickLi
                     sodium_mul = totalsouium / _sodium;
 
 
-
-                    String calories = String.valueOf(totalEnergy/_calories);
+                    String calories = String.valueOf(totalEnergy / _calories);
                     total_Energy = String.valueOf(totalEnergy);
                     total_Carbs = String.valueOf(Carbs_mul);
                     total_Sugar = String.valueOf(Sugar_mul);
@@ -521,9 +521,8 @@ public class DietLog_Details extends AppCompatActivity implements View.OnClickLi
                     total_cholestrol = String.valueOf(chole_mul);
 
 
-
-
-                    boolean b = controller.addFoodData(calories + "", food_data, total_Energy, total_Protein, total_Fat, total_Carbs, total_Sugar, total_fibre, total_sat_fat, total_souium, total_cholestrol, current_date, user_id, Diet_log_key);
+                     b = controller.addFoodData(calories + "", food_data, total_Energy, total_Protein, total_Fat, total_Carbs, total_Sugar, total_fibre, total_sat_fat, total_souium, total_cholestrol, current_date, user_id, Diet_log_key);
+                }
                     if (b == true) {
 
                         SharedPreferences sharedPreferences = getSharedPreferences("Date", MODE_PRIVATE);

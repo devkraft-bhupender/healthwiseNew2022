@@ -46,6 +46,7 @@ public class Customised_Diet_Plan_result extends AppCompatActivity implements Vi
     LinearLayout lin_Breakfast,lin_Lunch,lin_Evening_snack,lin_Dinner,lin_Morning_snack,edit_diet;
     RecyclerView recycle_b,recycle_l,recycle_s,recycle_d,recycle_m;
     Button Custom_diet_plan;
+    String  loadfromcustomize = "0";
 
 
     ArrayList<customized_model> cleanList(ArrayList<customized_model> fm, String key) {
@@ -76,10 +77,19 @@ public class Customised_Diet_Plan_result extends AppCompatActivity implements Vi
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.customac);
         TextView text = (TextView) findViewById(R.id.text);
-        text.setText("Your Ideal Daily Diet Plan");
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.customised__diet__plan_result);
+        text.setText("Your Standard Meal Plan");
+        try {
+            loadfromcustomize = (String) getIntent().getSerializableExtra("loadfromcustomize");
+            if (loadfromcustomize.equals("1")) {
+                text.setText("Your Customize Diet Plan");
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

@@ -460,8 +460,6 @@ public class Vegetables_page8 extends AppCompatActivity implements BaseUrl, View
 
                     JSONObject jo2 = jo1.getJSONObject("Breakfast");
 
-
-
                     JSONObject Brown_Bread = jo2.getJSONObject("Brown Bread");
                     JSONObject Large_Bread = Brown_Bread.getJSONObject("1 Large Bread");
                     String Indian_Diet_Brown_Bread = Large_Bread.getString("Basic Indian Diet");
@@ -579,7 +577,7 @@ public class Vegetables_page8 extends AppCompatActivity implements BaseUrl, View
                     String Indian_Diet_roti = roti_one.getString("Basic Indian Diet");
                     String Optimized_roti = roti_one.getString("Optimized Indian diet");
                     String Health_Risks_roti = roti_one.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Roti", "1 roti", Indian_Diet_roti, Optimized_roti, Health_Risks_roti, R.drawable.chapati));
+//                    datalist.add(new customized_model("Roti", "1 roti", Indian_Diet_roti, Optimized_roti, Health_Risks_roti, R.drawable.chapati));
 
                     if (!checkAddition(Indian_Diet_roti,Optimized_roti,Health_Risks_roti)){}
                     else {Lunch_list.add(new customized_model("Roti", "1 roti", Indian_Diet_roti, Optimized_roti, Health_Risks_roti, R.drawable.chapati));}
@@ -590,7 +588,7 @@ public class Vegetables_page8 extends AppCompatActivity implements BaseUrl, View
                     String Indian_Diet_Dals_meat = dals.getString("Basic Indian Diet");
                     String Optimized_Dals_meat = dals.getString("Optimized Indian diet");
                     String Health_Risks_Dals_meat = dals.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Dals/meat/fish/day", "1/2 cup cooked dal OR 2 pieces of boneless meat each of matchbox size", Indian_Diet_Dals_meat, Optimized_Dals_meat, Health_Risks_Dals_meat, R.drawable.dals));
+//                    datalist.add(new customized_model("Dals/meat/fish/day", "1/2 cup cooked dal OR 2 pieces of boneless meat each of matchbox size", Indian_Diet_Dals_meat, Optimized_Dals_meat, Health_Risks_Dals_meat, R.drawable.dals));
 
                     if (!checkAddition(Indian_Diet_Dals_meat,Optimized_Oats,Health_Risks_Dals_meat)){}
                     else {Lunch_list.add(new customized_model("Dals/meat/fish/day", "1/2 cup cooked dal OR 2 pieces of boneless meat each of matchbox size", Indian_Diet_Dals_meat, Optimized_Dals_meat, Health_Risks_Dals_meat, R.drawable.dals));}
@@ -599,7 +597,7 @@ public class Vegetables_page8 extends AppCompatActivity implements BaseUrl, View
                     String Indian_Diet_Vegetables2 = Vegetables2.getString("Basic Indian Diet");
                     String Optimized_Vegetables2 = Vegetables2.getString("Optimized Indian diet");
                     String Health_Risks_Vegetables2 = Vegetables2.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Vegetables", "1/2 cup cooked, 1 cup salad", Indian_Diet_Vegetables2, Optimized_Vegetables2, Health_Risks_Vegetables2, R.drawable.vegetables));
+//                    datalist.add(new customized_model("Vegetables", "1/2 cup cooked, 1 cup salad", Indian_Diet_Vegetables2, Optimized_Vegetables2, Health_Risks_Vegetables2, R.drawable.vegetables));
                     if (!checkAddition(Indian_Diet_Vegetables2,Optimized_Vegetables2,Health_Risks_Vegetables2)){}
                     else {Lunch_list.add(new customized_model("Vegetables", "1/2 cup cooked, 1 cup salad", Indian_Diet_Vegetables2, Optimized_Vegetables2, Health_Risks_Vegetables2, R.drawable.vegetables));}
 
@@ -608,7 +606,7 @@ public class Vegetables_page8 extends AppCompatActivity implements BaseUrl, View
                     String Indian_Diet_Milk_curd2 = Milk_curd2.getString("Basic Indian Diet");
                     String Optimized_Milk_curd2 = Milk_curd2.getString("Optimized Indian diet");
                     String Health_Risks_Milk_curd2 = Milk_curd2.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Milk/curd", "1 cup=200 ml", Indian_Diet_Milk_curd2, Optimized_Milk_curd2, Health_Risks_Milk_curd2, R.drawable.milk));
+//                    datalist.add(new customized_model("Milk/curd", "1 cup=200 ml", Indian_Diet_Milk_curd2, Optimized_Milk_curd2, Health_Risks_Milk_curd2, R.drawable.milk));
                     if (!checkAddition(Indian_Diet_Milk_curd2,Optimized_Milk_curd2,Health_Risks_Milk_curd2)){}
                     else {Lunch_list.add(new customized_model("Milk/curd", "1 cup=200 ml", Indian_Diet_Milk_curd2, Optimized_Milk_curd2, Health_Risks_Milk_curd2, R.drawable.milk));}
 
@@ -620,7 +618,7 @@ public class Vegetables_page8 extends AppCompatActivity implements BaseUrl, View
                     String Indian_Diet_Nuts = Nuts_half.getString("Basic Indian Diet");
                     String Optimized_Nuts = Nuts_half.getString("Optimized Indian diet");
                     String Health_Risks_Nuts = Nuts_half.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Nuts", "1 Oz =22 almonds/30 peanuts/16-20 kajus/10-12 macadonia nuts/28 pecan nuts/14walnut halfs", Indian_Diet_Nuts, Optimized_Nuts, Health_Risks_Nuts, R.drawable.nuts));
+//                    datalist.add(new customized_model("Nuts", "1 Oz =22 almonds/30 peanuts/16-20 kajus/10-12 macadonia nuts/28 pecan nuts/14walnut halfs", Indian_Diet_Nuts, Optimized_Nuts, Health_Risks_Nuts, R.drawable.nuts));
 
                     if (!checkAddition(Indian_Diet_Nuts,Optimized_Nuts,Health_Risks_Nuts)){}
                     else {snack_list.add(new customized_model("Nuts", "1 Oz =22 almonds/30 peanuts/16-20 kajus/10-12 macadonia nuts/28 pecan nuts/14walnut halfs", Indian_Diet_Nuts, Optimized_Nuts, Health_Risks_Nuts, R.drawable.nuts));}
@@ -630,7 +628,7 @@ public class Vegetables_page8 extends AppCompatActivity implements BaseUrl, View
                     String Indian_Diet_Fruits2 = Fruits2.getString("Basic Indian Diet");
                     String Optimized_Fruits2 = Fruits2.getString("Optimized Indian diet");
                     String Health_Risks_Fruits2 = Fruits2.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Fruits", "1 medium size fruit or 1/2 cup cut fruit OR 1/2 cup fruit juice", Indian_Diet_Fruits2, Optimized_Fruits2, Health_Risks_Fruits2, R.drawable.fruit));
+//                    datalist.add(new customized_model("Fruits", "1 medium size fruit or 1/2 cup cut fruit OR 1/2 cup fruit juice", Indian_Diet_Fruits2, Optimized_Fruits2, Health_Risks_Fruits2, R.drawable.fruit));
 
 
                     if (!checkAddition(Indian_Diet_Fruits2,Optimized_Fruits2,Health_Risks_Fruits2)){}
@@ -641,7 +639,7 @@ public class Vegetables_page8 extends AppCompatActivity implements BaseUrl, View
                     String Indian_Diet_Milk_curd3 = Milk_curd3.getString("Basic Indian Diet");
                     String Optimized_Milk_curd3 = Milk_curd3.getString("Optimized Indian diet");
                     String Health_Risks_Milk_curd3 = Milk_curd3.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Milk/curd", "1 cup=200 ml", Indian_Diet_Milk_curd3, Optimized_Milk_curd3, Health_Risks_Milk_curd3, R.drawable.milk));
+//                    datalist.add(new customized_model("Milk/curd", "1 cup=200 ml", Indian_Diet_Milk_curd3, Optimized_Milk_curd3, Health_Risks_Milk_curd3, R.drawable.milk));
 
                     if (!checkAddition(Indian_Diet_Fruits2,Optimized_Fruits2,Health_Risks_Fruits2)){}
                     else {snack_list.add(new customized_model("Milk/curd", "1 cup=200 ml", Indian_Diet_Milk_curd3, Optimized_Milk_curd3, Health_Risks_Milk_curd3, R.drawable.milk));}
@@ -653,7 +651,7 @@ public class Vegetables_page8 extends AppCompatActivity implements BaseUrl, View
                     String Indian_Diet_one2 = rice1.getString("Basic Indian Diet");
                     String Optimized_one2 = rice1.getString("Optimized Indian diet");
                     String Health_Risks_one2 = rice1.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Rice", "1/2 cup cooked", Indian_Diet_one2, Optimized_one2, Health_Risks_one2, R.drawable.grains));
+//                    datalist.add(new customized_model("Rice", "1/2 cup cooked", Indian_Diet_one2, Optimized_one2, Health_Risks_one2, R.drawable.grains));
 
                     if (!checkAddition(Indian_Diet_one2,Optimized_one2,Health_Risks_one2)){}
                     else {Dinner_list.add(new customized_model("Rice", "1/2 cup cooked", Indian_Diet_one2, Optimized_one2, Health_Risks_one2, R.drawable.grains));}
@@ -664,7 +662,7 @@ public class Vegetables_page8 extends AppCompatActivity implements BaseUrl, View
                     String Indian_Diet_Dals_meat2 = dals2.getString("Basic Indian Diet");
                     String Optimized_Dals_meat2 = dals2.getString("Optimized Indian diet");
                     String Health_Risks_Dals_meat2 = dals2.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Dals/meat/fish/day", "(Number of servings per week of individual protiens Ex: Fish, Tofu etc as per the customized diet plan )", Indian_Diet_Dals_meat2, Optimized_Dals_meat2, Health_Risks_Dals_meat2, R.drawable.dals));
+//                    datalist.add(new customized_model("Dals/meat/fish/day", "(Number of servings per week of individual protiens Ex: Fish, Tofu etc as per the customized diet plan )", Indian_Diet_Dals_meat2, Optimized_Dals_meat2, Health_Risks_Dals_meat2, R.drawable.dals));
                     if (!checkAddition(Indian_Diet_Dals_meat2,Optimized_Dals_meat2,Health_Risks_Dals_meat2)){}
                     else {Dinner_list.add(new customized_model("Dals/meat/fish/day", "(Number of servings per week of individual protiens Ex: Fish, Tofu etc as per the customized diet plan )", Indian_Diet_Dals_meat2, Optimized_Dals_meat2, Health_Risks_Dals_meat2, R.drawable.dals));}
 
@@ -673,7 +671,7 @@ public class Vegetables_page8 extends AppCompatActivity implements BaseUrl, View
                     String Indian_Diet_Vegetables3 = Vegetables3.getString("Basic Indian Diet");
                     String Optimized_Vegetables3 = Vegetables3.getString("Optimized Indian diet");
                     String Health_Risks_Vegetables3 = Vegetables3.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Vegetables", "1/2 cup cooked, 1 cup salad", Indian_Diet_Vegetables3, Optimized_Vegetables3, Health_Risks_Vegetables3, R.drawable.vegetables));
+//                    datalist.add(new customized_model("Vegetables", "1/2 cup cooked, 1 cup salad", Indian_Diet_Vegetables3, Optimized_Vegetables3, Health_Risks_Vegetables3, R.drawable.vegetables));
 
                     if (!checkAddition(Indian_Diet_Vegetables3,Optimized_Vegetables3,Health_Risks_Vegetables3)){}
                     else {Dinner_list.add(new customized_model("Vegetables", "1/2 cup cooked, 1 cup salad", Indian_Diet_Vegetables3, Optimized_Vegetables3, Health_Risks_Vegetables3, R.drawable.vegetables));}
@@ -683,7 +681,7 @@ public class Vegetables_page8 extends AppCompatActivity implements BaseUrl, View
                     String Indian_Diet_Milk_curd4 = Milk_curd4.getString("Basic Indian Diet");
                     String Optimized_Milk_curd4 = Milk_curd4.getString("Optimized Indian diet");
                     String Health_Risks_Milk_curd4 = Milk_curd4.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Milk/curd", "1 cup=200 ml", Indian_Diet_Milk_curd4, Optimized_Milk_curd4, Health_Risks_Milk_curd4, R.drawable.milk));
+//                    datalist.add(new customized_model("Milk/curd", "1 cup=200 ml", Indian_Diet_Milk_curd4, Optimized_Milk_curd4, Health_Risks_Milk_curd4, R.drawable.milk));
 
                     if (!checkAddition(Indian_Diet_Milk_curd4,Optimized_Milk_curd4,Health_Risks_Milk_curd4)){}
                     else {Dinner_list.add(new customized_model("Milk/curd", "1 cup=200 ml", Indian_Diet_Milk_curd4, Optimized_Milk_curd4, Health_Risks_Milk_curd4, R.drawable.milk));}
@@ -692,35 +690,35 @@ public class Vegetables_page8 extends AppCompatActivity implements BaseUrl, View
                     String Indian_Diet_roti1 = Roti1.getString("Basic Indian Diet");
                     String Optimized_roti1 = Roti1.getString("Optimized Indian diet");
                     String Health_Risks_roti1 = Roti1.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Roti", "1 roti", Indian_Diet_roti1, Optimized_roti1, Health_Risks_roti1, R.drawable.chapati));
+//                    datalist.add(new customized_model("Roti", "1 roti", Indian_Diet_roti1, Optimized_roti1, Health_Risks_roti1, R.drawable.chapati));
 
                     if (!checkAddition(Indian_Diet_roti1,Optimized_roti,Health_Risks_roti1)){}
                     else{ Dinner_list.add(new customized_model("Roti", "1 roti", Indian_Diet_roti1, Optimized_roti1, Health_Risks_roti1, R.drawable.chapati));}
 
 
 
-                    JSONObject jo6 = jo1.getJSONObject("Morning snack");
+//                    JSONObject jo6 = jo1.getJSONObject("Morning snack");
+//
+//                    JSONObject Milk_curd5 = jo6.getJSONObject("Milk/Curd");
+//                    JSONObject Milk_curd_cup1 = Milk_curd5.getJSONObject("1 cup= 200 ml");
+//                    String Indian_Diet_Milk_curd5 = Milk_curd_cup1.getString("Basic Indian Diet");
+//                    String Optimized_Milk_curd5 = Milk_curd_cup1.getString("Optimized Indian diet");
+//                    String Health_Risks_Milk_curd5 = Milk_curd_cup1.getString("Ideal Diet For People With Health Risks");
+//                    datalist.add(new customized_model("Milk/curd", "1 cup= 200 ml", Indian_Diet_Milk_curd5, Optimized_Milk_curd5, Health_Risks_Milk_curd5, R.drawable.milk));
+//                    if (!checkAddition(Indian_Diet_Milk_curd5,Optimized_Milk_curd5,Health_Risks_Milk_curd5)){}
+//                    else{ Morningsnack_list.add(new customized_model("Milk/curd", "1 cup= 200 ml", Indian_Diet_Milk_curd5, Optimized_Milk_curd5, Health_Risks_Milk_curd5, R.drawable.milk));}
 
-                    JSONObject Milk_curd5 = jo6.getJSONObject("Milk/Curd");
-                    JSONObject Milk_curd_cup1 = Milk_curd5.getJSONObject("1 cup= 200 ml");
-                    String Indian_Diet_Milk_curd5 = Milk_curd_cup1.getString("Basic Indian Diet");
-                    String Optimized_Milk_curd5 = Milk_curd_cup1.getString("Optimized Indian diet");
-                    String Health_Risks_Milk_curd5 = Milk_curd_cup1.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Milk/curd", "1 cup= 200 ml", Indian_Diet_Milk_curd5, Optimized_Milk_curd5, Health_Risks_Milk_curd5, R.drawable.milk));
-                    if (!checkAddition(Indian_Diet_Milk_curd5,Optimized_Milk_curd5,Health_Risks_Milk_curd5)){}
-                    else{ Morningsnack_list.add(new customized_model("Milk/curd", "1 cup= 200 ml", Indian_Diet_Milk_curd5, Optimized_Milk_curd5, Health_Risks_Milk_curd5, R.drawable.milk));}
 
 
-
-                    JSONObject Fruits6 = jo6.getJSONObject("Fruits");
-                    JSONObject Fruits_cup2 = Fruits6.getJSONObject("1 medium size fruit or 1/2 cup cut fruit OR 1/2 cup fruit juice");
-                    String Indian_Diet_Fruits6 = Fruits_cup2.getString("Basic Indian Diet");
-                    String Optimized_Fruits6 = Fruits_cup2.getString("Optimized Indian diet");
-                    String Health_Risks_Fruits6 = Fruits_cup2.getString("Ideal Diet For People With Health Risks");
-                    datalist.add(new customized_model("Fruits", "1 medium size fruit or 1/2 cup cut fruit OR 1/2 cup fruit juice", Indian_Diet_Fruits6, Optimized_Fruits6, Health_Risks_Fruits6, R.drawable.fruit));
-
-                    if (!checkAddition(Indian_Diet_Fruits6,Optimized_Fruits6,Health_Risks_Fruits6)){}
-                    else{ Morningsnack_list.add(new customized_model("Fruits", "1 medium size fruit or 1/2 cup cut fruit OR 1/2 cup fruit juice", Indian_Diet_Fruits6, Optimized_Fruits6, Health_Risks_Fruits6, R.drawable.fruit));}
+//                    JSONObject Fruits6 = jo6.getJSONObject("Fruits");
+//                    JSONObject Fruits_cup2 = Fruits6.getJSONObject("1 medium size fruit or 1/2 cup cut fruit OR 1/2 cup fruit juice");
+//                    String Indian_Diet_Fruits6 = Fruits_cup2.getString("Basic Indian Diet");
+//                    String Optimized_Fruits6 = Fruits_cup2.getString("Optimized Indian diet");
+//                    String Health_Risks_Fruits6 = Fruits_cup2.getString("Ideal Diet For People With Health Risks");
+//                    datalist.add(new customized_model("Fruits", "1 medium size fruit or 1/2 cup cut fruit OR 1/2 cup fruit juice", Indian_Diet_Fruits6, Optimized_Fruits6, Health_Risks_Fruits6, R.drawable.fruit));
+//
+//                    if (!checkAddition(Indian_Diet_Fruits6,Optimized_Fruits6,Health_Risks_Fruits6)){}
+//                    else{ Morningsnack_list.add(new customized_model("Fruits", "1 medium size fruit or 1/2 cup cut fruit OR 1/2 cup fruit juice", Indian_Diet_Fruits6, Optimized_Fruits6, Health_Risks_Fruits6, R.drawable.fruit));}
 
 
 
@@ -783,6 +781,7 @@ public class Vegetables_page8 extends AppCompatActivity implements BaseUrl, View
                     in.putExtra("dinner", Dinner_list);
                     in.putExtra("MSnack", Morningsnack_list);
                     in.putExtra("Snack", snack_list);
+                    in.putExtra("loadfromcustomize","1");
                     startActivity(in);
                     overridePendingTransition(R.anim.enter, R.anim.exit);
                     finish();

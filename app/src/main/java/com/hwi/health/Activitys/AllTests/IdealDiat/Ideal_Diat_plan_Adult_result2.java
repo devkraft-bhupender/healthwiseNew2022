@@ -438,7 +438,7 @@ public class Ideal_Diat_plan_Adult_result2 extends AppCompatActivity implements 
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.customac);
         TextView text = (TextView) findViewById(R.id.text);
-        text.setText("IDEAL DIET PLAN RESULT");
+        text.setText("YOUR IDEAL DAILY DIET PLAN");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ideal__diat_plan__adult_result2);
 
